@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Supplantree.iml" filepath="$PROJECT_DIR$/.idea/Supplantree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SupplantreeGroupProject/SupplantreeGroupProject.iml" filepath="$PROJECT_DIR$/SupplantreeGroupProject/SupplantreeGroupProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treeservice/treeservice.iml" filepath="$PROJECT_DIR$/treeservice/treeservice.iml" />
+    </modules>
+  </component>
+</project>
