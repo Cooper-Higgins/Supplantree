@@ -17,23 +17,21 @@ public class Tree implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column (name = "species")
     private String species;
 
-    @Column
+    @Column (name = "soil")
     private HashMap<String, Boolean> soil;
 
-    @Column
-    private String area;
 
-    @Column
+    @Column (name = "animals")
     private ArrayList<String> animals;
 
-    @Column
+    @Column (name = "size")
     private int size;
 
-    @JsonIgnoreProperties({"trees"})
     @ManyToMany
+    @JsonIgnoreProperties({"trees"})
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
             name = "locations_trees",
@@ -51,17 +49,20 @@ public class Tree implements Serializable {
 
     private List<Location> locations;
 
-    public Tree(String species, String area, int size){
+    public Tree(String species, int size, HashMap soil, ArrayList animals){
         this.species = species;
-        this.area = area;
         this.size = size;
         this.soil = new HashMap<>();
-        this.animals = new ArrayList<String>();
-        this.locations = new ArrayList<Location>();
+        this.animals = new ArrayList<>();
+        this.locations = new ArrayList<>();
     }
 
     public Tree(){
 
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getSpecies() {
@@ -72,11 +73,6 @@ public class Tree implements Serializable {
         return soil;
     }
 
-
-    public String getArea() {
-        return area;
-    }
-
     public ArrayList<String> getAnimals() {
         return animals;
     }
@@ -85,12 +81,9 @@ public class Tree implements Serializable {
         return size;
     }
 
-    public List<Location> getLocations() {
-        return locations;
-    }
 
-    public void setLocations(List<Location> locations) {
-        this.locations = locations;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public void setSpecies(String species) {
@@ -101,10 +94,6 @@ public class Tree implements Serializable {
         this.soil = soil;
     }
 
-    public void setArea(String area) {
-        this.area = area;
-    }
-
     public void setAnimals(ArrayList<String> animals) {
         this.animals = animals;
     }
@@ -112,4 +101,7 @@ public class Tree implements Serializable {
     public void setSize(int size) {
         this.size = size;
     }
+
+    public void addLocation(Location location) {
+        this.locations.add(location);}
 }

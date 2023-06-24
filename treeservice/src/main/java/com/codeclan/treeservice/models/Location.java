@@ -1,6 +1,7 @@
 package com.codeclan.treeservice.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
@@ -11,21 +12,21 @@ import java.util.List;
 @Table(name = "locations")
 public class Location {
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column (name = "name")
     private String name;
 
-    @Column
+    @Column (name = "soil")
     private String soil;
 
-    @Column
+    @Column (name = "weather")
     private String weather;
 
-    @JsonBackReference
     @ManyToMany
+    @JsonIgnoreProperties({"locations"})
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
             name = "locations_trees",
@@ -47,11 +48,15 @@ public class Location {
         this.name = name;
         this.soil = soil;
         this.weather = weather;
-        this.trees = new ArrayList<Tree>();
+        this.trees = new ArrayList<>();
     }
 
     public Location(){
 
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getName() {
@@ -78,4 +83,14 @@ public class Location {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void addTree(Tree tree) {
+        this.trees.add(tree);
+    }
 }
+
+
