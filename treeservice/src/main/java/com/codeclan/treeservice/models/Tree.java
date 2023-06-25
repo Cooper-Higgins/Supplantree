@@ -49,12 +49,32 @@ public class Tree implements Serializable {
 
     private List<Location> locations;
 
+
+    @ManyToMany
+    @JsonIgnoreProperties({"trees"})
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @JoinTable(
+            name = "users_trees",
+            joinColumns = {@JoinColumn(
+                    name = "tree_id",
+                    nullable = true,
+                    updatable = false)
+            },
+            inverseJoinColumns = {@JoinColumn(
+                    name = "user_id",
+                    nullable = false,
+                    updatable = false)
+            }
+    )
+    private List<User> users;
+
     public Tree(String species, int size, HashMap soil, ArrayList animals){
         this.species = species;
         this.size = size;
         this.soil = new HashMap<>();
         this.animals = new ArrayList<>();
         this.locations = new ArrayList<>();
+        this.users = new ArrayList<>();
     }
 
     public Tree(){

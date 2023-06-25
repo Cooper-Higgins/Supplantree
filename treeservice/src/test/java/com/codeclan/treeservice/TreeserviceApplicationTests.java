@@ -4,6 +4,7 @@ import com.codeclan.treeservice.models.Location;
 import com.codeclan.treeservice.models.Tree;
 import com.codeclan.treeservice.repositories.LocationRepository;
 import com.codeclan.treeservice.repositories.TreeRepository;
+import com.codeclan.treeservice.repositories.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,6 +20,9 @@ public class TreeserviceApplicationTests {
 
 	@Autowired
 	LocationRepository locationRepository;
+
+	@Autowired
+	UserRepository userRepository;
 
 	@Test
 	void contextLoads() {
