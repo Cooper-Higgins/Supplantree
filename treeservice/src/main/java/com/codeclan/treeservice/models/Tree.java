@@ -54,7 +54,7 @@ public class Tree implements Serializable {
     @JsonIgnoreProperties({"trees"})
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
-            name = "users_trees",
+            name = "trees_users",
             joinColumns = {@JoinColumn(
                     name = "tree_id",
                     nullable = true,
@@ -122,6 +122,13 @@ public class Tree implements Serializable {
         this.size = size;
     }
 
+
+
     public void addLocation(Location location) {
-        this.locations.add(location);}
+        this.locations.add(location);
+    }
+
+    public void addUser(User user){
+        this.users.add(user);
+    }
 }

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -13,12 +14,13 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     private Long id;
 
     @Column(name="name")
     private String name;
 
-    @Column(name="email-address")
+    @Column(name="email_address")
     private String emailAddress;
 
     @Column(name="password")
@@ -28,7 +30,7 @@ public class User {
     @JsonIgnoreProperties({"users"})
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
-            name = "users_trees",
+            name = "trees_users",
             joinColumns = {@JoinColumn(
                     name = "user_id",
                     nullable = false,
@@ -46,6 +48,7 @@ public class User {
         this.name = name;
         this.emailAddress = emailAddress;
         this.password = password;
+        this.trees = new ArrayList<>();
     }
 
     public User(){
@@ -90,5 +93,9 @@ public class User {
 
     public void setTrees(List<Tree> trees) {
         this.trees = trees;
+    }
+
+    public void addTree(Tree tree){
+        this.trees.add(tree);
     }
 }
