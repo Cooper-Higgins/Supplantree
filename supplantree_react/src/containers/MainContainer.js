@@ -11,6 +11,7 @@ import CreateAccount from "../components/Login/CreateAccount";
 import NavBar from "../components/NavBar";
 import ErrorPage from "../components/ErrorPage";
 import Footer from "../components/Footer";
+import LandingPage from "../components/LandingPage";
 
 
     const MainContainer = () => {
@@ -19,7 +20,7 @@ import Footer from "../components/Footer";
             <NavBar/>
             <div className="main-container">
               <Routes>
-                <Route path="/"/>
+                <Route path="/" element={<LandingPage />}/>
                 <Route path="/plant" element={<PlantContainer/>}/>
                 <Route path="/learn" element={<LearnContainer/>}/>
                 <Route path="/about" element={<About/>}/>
