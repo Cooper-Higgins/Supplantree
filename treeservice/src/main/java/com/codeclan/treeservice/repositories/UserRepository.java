@@ -1,4 +1,9 @@
 package com.codeclan.treeservice.repositories;
 
-public interface UserRepository {
+import com.codeclan.treeservice.models.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends JpaRepository <User, Long> {
 }
