@@ -1,8 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import NavBar from "./components/NavBar";
-import LoginScreen from "./components/LoginScreen";
-import LocationGetter from "./components/LocationGetter";
+import MainContainer from "./containers/MainContainer";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,17 +10,11 @@ const App = () => {
     },2000);
   },[])
 
-  return (
-    <Router>
-          <>
-            <NavBar/>
-            <Routes>
-              <Route path="/" element={<LoginScreen/>}/>
-              <Route path="/location" element={<LocationGetter/>}/>
-            </Routes>
-          </>
-    </Router>
-  );
+    return (
+      <>
+        <MainContainer/>
+      </>
+    );
 }
 
 export default App;
