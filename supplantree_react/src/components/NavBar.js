@@ -11,7 +11,7 @@ const NavBar = () => {
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <>
+    <div>
       {/* IconContext changes icons from default black to dark forest green*/}
       <IconContext.Provider value={{ color: "#EFD231" }}>
         <nav className="navbar">
@@ -27,17 +27,6 @@ const NavBar = () => {
             </div>
             {/* Route links with highlight effect when active */}
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <li className="nav-item">
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  Home
-                </NavLink>
-              </li>
               <li className="nav-item">
                 <NavLink
                   to="/learn"
@@ -73,6 +62,17 @@ const NavBar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
+                  to="/my-trees"
+                  className={({ isActive }) =>
+                    "nav-links" + (isActive ? " activated" : "")
+                  }
+                  onClick={closeMobileMenu}
+                >
+                  My Trees
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
                   to="/account"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")
@@ -97,7 +97,7 @@ const NavBar = () => {
           </div>
         </nav>
       </IconContext.Provider>
-    </>
+    </div>
   );
 };
 

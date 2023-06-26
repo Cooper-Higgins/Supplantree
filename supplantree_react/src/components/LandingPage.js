@@ -1,13 +1,9 @@
 import React from 'react';
 
-const HomePage = () => {
+const LandingPage = () => {
     return ( 
-        <>
-        <Routes>
-            <Route> path="/"</Route>
-        </Routes>
-        </>
+        <h1 className="bg-red-300">Landing Page</h1>
      );
 }
  
-export default HomePage;
+export default LandingPage;
