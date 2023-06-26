@@ -10,10 +10,25 @@ const Footer = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="footer-nav-item">
-            <Link to="/">Create Trip</Link>
+            <Link to="/">Home</Link>
           </li>
           <li className="footer-nav-item">
-            <Link to="/my_trips">My Trips</Link>
+            <Link to="/learn">Learn</Link>
+          </li>
+          <li className="footer-nav-item">
+            <Link to="/plant">Plant</Link>
+          </li>
+          <li className="footer-nav-item">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="footer-nav-item">
+            <Link to="/my_trees">My Trees</Link>
+          </li>
+          <li className="footer-nav-item">
+            <Link to="/learn">Account</Link>
+          </li>
+          <li className="footer-nav-item">
+            <Link to="/learn">Login</Link>
           </li>
         </ul>
       </div>

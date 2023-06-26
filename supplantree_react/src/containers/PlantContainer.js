@@ -5,11 +5,11 @@ import ResultCarousel from '../components/Plant-Page/ResultCarousel';
 
 const PlantContainer = () => {
     return (
-        <>
+        <div>
         <AreaChoiceDropdown/>
         <SoilChoiceDropdown/>
         <ResultCarousel/>
-        </>
+        </div>
 
      );
 }
