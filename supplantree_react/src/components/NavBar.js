@@ -29,17 +29,6 @@ const NavBar = () => {
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
                 <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
                   to="/learn"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")
@@ -69,6 +58,17 @@ const NavBar = () => {
                   onClick={closeMobileMenu}
                 >
                   About
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/my-trees"
+                  className={({ isActive }) =>
+                    "nav-links" + (isActive ? " activated" : "")
+                  }
+                  onClick={closeMobileMenu}
+                >
+                  My Trees
                 </NavLink>
               </li>
               <li className="nav-item">
