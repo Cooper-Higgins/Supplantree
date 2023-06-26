@@ -36,7 +36,7 @@ const Footer = () => {
         <p>
           <a
             className="footer-copyright-link"
-            href="https://github.com/Procyonax/How-Selfish-Is-Your-Trip"
+            href="https://github.com/Cooper-Higgins/Supplantree"
           >
             © Jamie Cooper-Higgins, Neil Hutton, Richard Dalrymple, Zoe Eustace
           </a>
