@@ -12,6 +12,7 @@ import NavBar from "../components/NavBar";
 import ErrorPage from "../components/ErrorPage";
 import Footer from "../components/Footer";
 import LandingPage from "../components/LandingPage";
+import UserContainer from "./UserContainer";
 
 
     const MainContainer = () => {
@@ -28,6 +29,7 @@ import LandingPage from "../components/LandingPage";
                 <Route path="/account" element={<Account/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/create-account" element={<CreateAccount/>}/>
+                <Route path="/users/*" element={<UserContainer/>}/>
                 <Route path="*" element={<ErrorPage/>} />
               </Routes>
             </div>
