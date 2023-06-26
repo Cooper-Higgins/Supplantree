@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { PiTreeEvergreenBold } from "react-icons/fa";
+import { PiTreeEvergreenBold } from "react-icons/pi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 

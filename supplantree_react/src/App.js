@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import SplashScreen from "./components/SplashScreen";
+import NavBar from "./components/NavBar";
 import LoginScreen from "./components/LoginScreen";
 import LocationGetter from "./components/LocationGetter";
 
@@ -15,14 +15,13 @@ const App = () => {
 
   return (
     <Router>
-      {isLoading ? 
-        <SplashScreen/> :
-        (
-          <Routes>
-            <Route path="/" element={<LoginScreen/>}/>
-            <Route path="/location" element={<LocationGetter/>}/>
-          </Routes>
-        )}
+          <>
+            <NavBar/>
+            <Routes>
+              <Route path="/" element={<LoginScreen/>}/>
+              <Route path="/location" element={<LocationGetter/>}/>
+            </Routes>
+          </>
     </Router>
   );
 }
