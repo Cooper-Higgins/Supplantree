@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-const AreaChoiceDropdown = () => {
+const AreaChoiceDropdown = ({data}) => {
+
+    const areaOptions = data.map((location, index) => {
+        return <option key={index} value = {index}>{location.name}</option>
+    })
+
     return ( 
-        <h1>Dropdown 1</h1>
+        <select defaultValue={"select-area"}>
+        <option disabled value= "select-area">Select an area</option>
+            {areaOptions}
+        </select>
      );
 }
  
