@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: "Inter",
+        Inter: ["Inter", "sans-serif"],
       },
     },
     plugins: [],
