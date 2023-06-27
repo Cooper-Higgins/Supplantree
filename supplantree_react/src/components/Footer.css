@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #19191a;
+  background-color: #0E2B18;
   height: 10vh;
   display: flex;
   justify-content: space-around;
@@ -7,7 +7,7 @@
   position: absolute;
   bottom: 0;
   border-top: 5px solid;
-  border-color: #efd231;
+  border-color: #EB94AD;
   width: 100%;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .footer-nav-item:hover {
-  border-bottom: 1px solid #efd231;
+  border-bottom: 1px solid #EB94AD;
 }
 
 .footer-nav-item > a {
