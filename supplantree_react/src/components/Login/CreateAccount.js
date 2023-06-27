@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const CreateAccount = () => {
-    return ( 
-        <h1>Create Account</h1>
-     );
-}
- 
+  return <h1>Create Account</h1>;
+};
+
 export default CreateAccount;
