@@ -3,6 +3,7 @@ import AreaChoiceDropdown from "../components/Plant-Page/AreaChoiceDropdown";
 import SoilChoiceDropdown from "../components/Plant-Page/SoilChoiceDropdown";
 import ResultCarousel from "../components/Plant-Page/ResultCarousel";
 import Request from "../helpers/request";
+import TreeForm from "../components/Plant-Page/TreeForm"
 
 import data from "../data.json";
 
