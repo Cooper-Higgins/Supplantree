@@ -1,12 +1,19 @@
 import React, {Fragment} from "react";
 import { Link } from "react-router-dom";
 
-const User = ({user}) => {
+const User = ({trees, user, addTreeToUser}) => {
 
     if(!user){
         return "Loading....."
     }
-    const url = "/users/" + user.id;
+    const url = "/users/${user.id}"
+    
+    const handleAddTree = () => {
+
+        console.log(user);
+        addTreeToUser();
+
+    }
 
     return ( 
     <Fragment>
@@ -15,6 +22,7 @@ const User = ({user}) => {
             {user.name}
         </Link>
         </p>
+        <button onClick={handleAddTree}>Add Tree</button>
     </Fragment>
   )
 

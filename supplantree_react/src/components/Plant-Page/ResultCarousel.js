@@ -1,6 +1,7 @@
 import React from 'react';
 
-const ResultCarousel = () => {
+const ResultCarousel = ({data}) => {
+    console.log(data);
     return ( <h1>Carousel</h1> );
 }
  

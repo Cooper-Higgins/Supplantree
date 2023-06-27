@@ -14,6 +14,8 @@ import Footer from "../components/Footer";
 import LandingPage from "../components/LandingPage";
 import UserContainer from "./UserContainer";
 
+import data from "../data.json"
+
 
     const MainContainer = () => {
         return ( 
@@ -29,7 +31,7 @@ import UserContainer from "./UserContainer";
                 <Route path="/account" element={<Account/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/create-account" element={<CreateAccount/>}/>
-                <Route path="/users/*" element={<UserContainer/>}/>
+                <Route path="/users/*" element={<UserContainer data = {data}/>}/>
                 <Route path="*" element={<ErrorPage/>} />
               </Routes>
             </div>

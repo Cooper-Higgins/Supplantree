@@ -3,9 +3,10 @@ import Request from "../helpers/request";
 import { useParams, Route, Routes } from "react-router-dom";
 import User from "../components/User";
 
-const UserContainer = () => {
+const UserContainer = ({data}) => {
 
     const [users, setUsers] = useState([])
+    const [trees, setTrees] = useState(data.trees)
 
     useEffect(() => {
         getUsers()
@@ -19,11 +20,11 @@ const UserContainer = () => {
         })
     }
 
-    const UserWrapper = () => {
+    const UserWrapper = ({users, addTreeToUser}) => {
         console.log("wrapper triggers");
         const {id} = useParams()
         let foundUser = findUserById(id)
-        return <User user={foundUser}/>
+        return <User user={foundUser} addTreeToUser={addTreeToUser}/>
     }
 
     const findUserById = (id) => {
@@ -36,9 +37,16 @@ const UserContainer = () => {
         return foundUser;
       }
 
+      const addTreeToUser = () => {
+        const tree = trees[0]
+        const user = users[0]
+        user.trees.push(tree)
+        console.log(user);
+      }
+
     return (
         <Routes>
-            <Route path="/:id" element={<UserWrapper/>}/>
+            <Route path="/:id" element={<UserWrapper addTreeToUser={addTreeToUser} users={users} trees={trees} />}/>
         </Routes>
         
      );
