@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { PiTreeEvergreenBold } from "react-icons/pi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import "./NavBar.css"
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
