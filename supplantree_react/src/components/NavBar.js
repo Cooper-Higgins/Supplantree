@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { PiTreeEvergreenBold } from "react-icons/pi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import "./NavBar.css"
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
@@ -12,8 +13,8 @@ const NavBar = () => {
 
   return (
     <div>
-      {/* IconContext changes icons from default black to dark forest green*/}
-      <IconContext.Provider value={{ color: "#EFD231" }}>
+        {/* IconContext changes icons from default black to white, as background is black */}
+        <IconContext.Provider value={{ color: "#ffffffc5" }}>
         <nav className="navbar">
           <div className="navbar-container container">
             {/* Logo routes to home and closes mobile menu when clicked */}
@@ -68,7 +69,7 @@ const NavBar = () => {
                   }
                   onClick={closeMobileMenu}
                 >
-                  My Trees
+                  Trees
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -96,7 +97,7 @@ const NavBar = () => {
             </ul>
           </div>
         </nav>
-      </IconContext.Provider>
+        </IconContext.Provider>
     </div>
   );
 };
