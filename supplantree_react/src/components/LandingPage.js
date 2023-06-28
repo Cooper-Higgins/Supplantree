@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -15,7 +14,7 @@ const LandingPage = () => {
             about a tree.
           </p>
           <div className="flex justify-evenly mb-20">
-          <a href="http://localhost:3000/plant">
+            <a href="http://localhost:3000/plant">
               <button className="bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
                 Get Planting!
               </button>
@@ -35,12 +34,12 @@ const LandingPage = () => {
       </div>
       {/* top container */}
 
-      <div className="flex flex-col flex-wrap gap-4">
+      <div className="flex flex-col flex-wrap m-4 gap-4">
         {/* second container */}
 
-        <div className="flex flex-col md:flex-row bg-slate-100">
+        <div className="flex flex-col md:flex-row bg-slate-100 rounded-3xl border-8">
           <img
-            className="w-10/12 place-self-center md:w-5/12 m-2 p-4"
+            className="w-10/12 place-self-center md:w-5/12 m-2 p-4 rounded-3xl"
             src="./images/first_image.jpg"
             alt="placeholder"
           ></img>
@@ -52,9 +51,9 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300">
+        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 rounded-3xl border-8">
           <img
-            className="w-10/12 md:w-5/12 place-self-center m-2 p-4"
+            className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-3xl"
             src="./images/second_image.jpg"
             alt="placeholder"
           ></img>
@@ -65,9 +64,9 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-evenly bg-slate-100">
+        <div className="flex flex-col md:flex-row justify-evenly bg-slate-100 rounded-3xl border-8">
           <img
-            className="w-10/12 md:w-5/12 place-self-center m-2 p-4"
+            className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-3xl"
             src="./images/third_image.jpg"
             alt="placeholder"
           ></img>
@@ -88,7 +87,7 @@ const LandingPage = () => {
         </h1>
       </div>
       <div className="flex justify-center pb-10">
-      <a href="http://localhost:3000/plant">
+        <a href="http://localhost:3000/plant">
           <button className="ml-10 bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
             Plant
           </button>
