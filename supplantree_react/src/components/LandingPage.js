@@ -15,12 +15,12 @@ const LandingPage = () => {
             about a tree.
           </p>
           <div className="flex justify-evenly">
-            <a href="http://localhost:3001/plant">
+            <a href="http://localhost:3000/plant">
               <button className="bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
                 Get Planting!
               </button>
             </a>
-            <a href="http://localhost:3001/learn">
+            <a href="http://localhost:3000/learn">
               <button className="bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
                 Learn More
               </button>
@@ -87,12 +87,12 @@ const LandingPage = () => {
         <h1>Ready to get started?</h1>
       </div>
       <div className="flex justify-evenly my-20">
-        <a href="http://localhost:3001/plant">
+        <a href="http://localhost:3000/plant">
           <button className="ml-10 bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
             Plant
           </button>
         </a>
-        <a href="http://localhost:3001/learn">
+        <a href="http://localhost:3000/learn">
           <button className="mr-10 bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
             Learn
           </button>

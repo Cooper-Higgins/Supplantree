@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom"
 import Request from '../../helpers/request';
 import Login from '../Login/LoginPage';
 
-const TreeForm = ({ postTree, putUser }) => {
+const TreeForm = ({ postTree, putUser, data }) => {
 
   const navigate = useNavigate();
  
@@ -16,7 +16,7 @@ const TreeForm = ({ postTree, putUser }) => {
           "Peaty": true,
           "Humus Iron, Brown Forest Soil": true
         },
-        "animals": ["The perfect home for iconic Scottish wildlife, such as the red squirrel, capercaillie, Scottish crossbill and the Scottish wildcat"]
+        "animals": ["The perfect home for iconic Scottish wildlife, such as the red squirrel, capercaillie, Scottish crossbill, and the Scottish wildcat"]
   });
   const [users, setUsers] = useState([]);
 
@@ -38,36 +38,43 @@ const TreeForm = ({ postTree, putUser }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log(tree);
     postTree(tree)
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        console.log('response: ', data);
         const retrievedTree = data;
-        console.log(retrievedTree);
         const updatedUsers = [...users]
-        console.log(updatedUsers);
         updatedUsers[0]["trees"].push(tree)
-        console.log(updatedUsers);
         setUsers(updatedUsers)
-        console.log(users);
         putUser(updatedUsers[0])
-        setTimeout(()=> {
-            navigate('/users')
-        }, 5000)
-        console.log('putUser called')
         })
       .catch((error) => {
         console.error('Error occurred during tree post:', error);
       });
   };
 
+  const areaOptions = data.locations.map((location, index) => {
+    return <option key={index} value = {index}>{location.name}</option>
+})
+
+  const soilOptions = Object.keys(data.trees[0]["soil"]).map((soil, index) => {
+    return <option key={index} value={index}>{soil}</option>
+  })
+  
+
   return (
     <div>
       <h2>Tree Form</h2>
       <form onSubmit={handleSubmit}>
+      <select defaultValue={"select-area"}>
+        <option disabled value= "select-area">Select an area</option>
+            {areaOptions}
+        </select>
+        <select defaultValue={"select-soil"}>
+        <option disabled value= "select-soil">Select a soil</option>
+            {soilOptions}
+        </select>
         <label>
           Tree Name:
           <input type="text" name="name" value={tree.name || ''} onChange={handleTreeChange} />
