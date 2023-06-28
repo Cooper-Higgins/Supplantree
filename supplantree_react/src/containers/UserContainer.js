@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Request from "../helpers/request";
 import { useParams, Route, Routes } from "react-router-dom";
 import User from "../components/User";
+import TreeForm from "../components/Plant-Page/TreeForm"
 
 const UserContainer = ({data}) => {
 
@@ -44,9 +45,25 @@ const UserContainer = ({data}) => {
         console.log(user);
       }
 
+      const handleTreePost = (tree) => {
+        const request = new Request();
+        return request.post('/api/trees', tree)
+      };
+
+      const handleUserPut = (user) => {
+        console.log(user);
+        const request = new Request()
+        request.put(`/api/users/${user.id}`, user).then(() => {
+          console.log('successful');
+        })
+        .catch((error) => {
+          console.error(error)
+        })
+      }
+
     return (
         <Routes>
-            <Route path="/:id" element={<UserWrapper addTreeToUser={addTreeToUser} users={users} trees={trees} />}/>
+            <Route path="/:id" element={<TreeForm postTree={handleTreePost} putUser={handleUserPut}/>}/>
         </Routes>
         
      );
