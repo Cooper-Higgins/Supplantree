@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import SoilChoiceDropdown from "../components/Plant-Page/SoilChoiceDropdown";
 import ResultCarousel from "../components/Plant-Page/ResultCarousel";
 import Request from "../helpers/request";
 import TreeForm from "../components/Plant-Page/TreeForm";
@@ -23,7 +22,6 @@ const PlantContainer = () => {
 
   return (
     <div>
-      <SoilChoiceDropdown />
       <TreeForm data={data} />
       {/* <ResultCarousel data={data.trees} /> */}
       <div className="flex justify-center my-20">
