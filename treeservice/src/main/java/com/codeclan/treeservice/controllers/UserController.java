@@ -31,4 +31,18 @@ public class UserController {
         userRepository.save(user);
         return new ResponseEntity<>(user, HttpStatus.CREATED);
     }
+
+    @PutMapping(value="/users/{id}")
+    public ResponseEntity<User> updateUser(@RequestBody User updatedUser, @PathVariable Long id){
+        User existingUser = userRepository.findById(id).get();
+
+        existingUser.setName(updatedUser.getName());
+        existingUser.setEmailAddress(updatedUser.getEmailAddress());
+        existingUser.setPassword(updatedUser.getPassword());
+        existingUser.setTrees(updatedUser.getTrees());
+
+        userRepository.save(existingUser);
+
+        return new ResponseEntity<>(existingUser, HttpStatus.OK);
+    }
 }
