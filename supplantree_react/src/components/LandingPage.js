@@ -2,7 +2,7 @@ import React from "react";
 
 const LandingPage = () => {
   return (
-    <main className="font-Inter min-h-screen bg-gradient-to-b from-green-400 to-green-100">
+    <main className="font-Inter min-h-screen bg-green-400">
       <div className="flex justify-evenly gap-8 md:gap-4 flex-col-reverse md:flex-row pt-8">
         <div className="flex flex-col gap-12 md:gap-20 justify-center text-center md:w-5/12">
           <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl m-4">
@@ -15,12 +15,12 @@ const LandingPage = () => {
           </p>
           <div className="flex justify-evenly mb-20">
             <a href="http://localhost:3000/plant">
-              <button className="bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
+              <button className="bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
                 Get Planting!
               </button>
             </a>
             <a href="http://localhost:3000/learn">
-              <button className="bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
+              <button className="bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
                 Learn More
               </button>
             </a>
@@ -37,7 +37,7 @@ const LandingPage = () => {
       <div className="flex flex-col flex-wrap m-4 gap-4">
         {/* second container */}
 
-        <div className="flex flex-col md:flex-row bg-slate-100 rounded-3xl border-8">
+        <div className="flex flex-col md:flex-row bg-pink-200 rounded-3xl border-8 border-white">
           <img
             className="w-10/12 place-self-center md:w-5/12 m-2 p-4 rounded-3xl"
             src="./images/first_image.jpg"
@@ -51,7 +51,7 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 rounded-3xl border-8">
+        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 rounded-3xl border-8 border-white">
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-3xl"
             src="./images/second_image.jpg"
@@ -64,7 +64,7 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-evenly bg-slate-100 rounded-3xl border-8">
+        <div className="flex flex-col md:flex-row justify-evenly bg-pink-200 rounded-3xl border-8 border-white">
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-3xl"
             src="./images/third_image.jpg"
@@ -88,12 +88,12 @@ const LandingPage = () => {
       </div>
       <div className="flex justify-center pb-10">
         <a href="http://localhost:3000/plant">
-          <button className="ml-10 bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
+          <button className="ml-10 bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
             Plant
           </button>
         </a>
         <a href="http://localhost:3000/learn">
-          <button className="mr-10 bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
+          <button className="mr-10 bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
             Learn
           </button>
         </a>
