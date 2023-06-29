@@ -2,22 +2,13 @@ import React, { useEffect, useState } from 'react';
 import {useNavigate} from "react-router-dom"
 import Request from '../../helpers/request';
 import Login from '../Login/LoginPage';
+import ResultCarousel from "../Plant-Page/ResultCarousel"
 
 const TreeForm = ({ postTree, putUser, data }) => {
 
   const pause = useNavigate();
  
-  const [trees, setTrees] = useState({
-        "id":1,
-        "species": "Scots Pine", 
-        "size": 35,
-        "soil":{
-          "Brown Forest Soil": true,
-          "Peaty": true,
-          "Humus Iron, Brown Forest Soil": true
-        },
-        "animals": ["The perfect home for iconic Scottish wildlife, such as the red squirrel, capercaillie, Scottish crossbill, and the Scottish wildcat"]
-  });
+  const [trees, setTrees] = useState([]);
   const [users, setUsers] = useState([]);
   const [soil, setSoil] = useState([])
 
@@ -73,6 +64,7 @@ const TreeForm = ({ postTree, putUser, data }) => {
   }
 
   const handleSubmit = (event) => {
+    event.preventDefault()
     let plants = data.trees;
     console.log("plants", plants[0]);
     let foundTrees = [];
@@ -84,7 +76,7 @@ const TreeForm = ({ postTree, putUser, data }) => {
       }
     }
     console.log("foundTrees", foundTrees);
-    return foundTrees;
+    setTrees(foundTrees);
     
   }
   
@@ -109,6 +101,7 @@ const TreeForm = ({ postTree, putUser, data }) => {
         <br />
         <button type="submit">Submit</button>
       </form>
+      {trees.length > 0 && <ResultCarousel foundTrees={trees}/>}
     </div>
   );
 };
