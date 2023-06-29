@@ -101,7 +101,7 @@ const TreeForm = ({ postTree, putUser, data }) => {
         <br />
         <button type="submit">Submit</button>
       </form>
-      {trees.length > 0 && <ResultCarousel foundTrees={trees}/>}
+      {trees.length > 0 && <ResultCarousel foundTrees={trees} postTree={postTree} users={users} setUsers={setUsers} putUser={putUser}/>}
     </div>
   );
 };

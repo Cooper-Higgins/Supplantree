@@ -47,7 +47,7 @@ const UserContainer = ({data}) => {
 
       const handleTreePost = (tree) => {
         const request = new Request();
-        return request.post('/api/trees', tree)
+        request.post('/api/trees', tree)
       };
 
       const handleUserPut = (user) => {
@@ -63,7 +63,7 @@ const UserContainer = ({data}) => {
 
     return (
         <Routes>
-            <Route path="/:id" element={<TreeForm postTree={handleTreePost} putUser={handleUserPut}/>}/>
+            <Route path="/:id" element={<TreeForm postTree={handleTreePost} putUser={handleUserPut} data={data}/>}/>
         </Routes>
         
      );
