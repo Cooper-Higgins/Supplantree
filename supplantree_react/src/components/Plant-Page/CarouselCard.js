@@ -7,6 +7,7 @@ const CarouselCard = ({ tree, postTree, users, setUsers, putUser }) => {
     postTree(tree);
   };
 
+  
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -17,5 +18,6 @@ const CarouselCard = ({ tree, postTree, users, setUsers, putUser }) => {
     </div>
   );
 };
+
 
 export default CarouselCard;
