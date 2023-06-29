@@ -9,6 +9,7 @@
         "Peaty": false,
         "Humus Iron, Brown Forest Soil": true
       },
+      "age": 700,
       "nature": "The perfect home for iconic Scottish wildlife, such as the red squirrel, capercaillie, Scottish crossbill and the Scottish wildcat"
     },
     {
@@ -20,6 +21,7 @@
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
+      "age": 200,
       "nature": "Common juniper provides dense cover for nesting birds, such as the goldcrest and firecrest, and, in northern upland areas, the black grouse. A number of birds eat the fruit, including the fieldfare, song thrush, mistle thrush and ring ouzel."
     },
     {
@@ -31,6 +33,7 @@
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": false
       },
+      "age": 90,
       "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches and redpolls"
     },
     {
@@ -42,6 +45,7 @@
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
+      "age": 100,
       "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches and redpolls"
     },
     {
@@ -53,6 +57,7 @@
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
+      "age": 60,
       "nature": "The roots make perfect nests for otters and the seeds are eaten by siskin, redpoll and goldfinch."
     },
     {
@@ -64,6 +69,7 @@
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
+      "age": 1000,
       "nature": "Oak trees support more wildlife than other trees, eg the deadwood cavities providing habitats for nesting birds and roosting bats. Food plants of caterpillars of purples hairstreak butterflies. Squirrels, jays and badgers eat their acorns."
     },
     {
@@ -75,6 +81,7 @@
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
+      "age": 400,
       "nature": "Due to their size, they provide perfect cover for wildflowers which in turn support a wide range of insects including the rare high brown fritillery butterfly. Woodpeckers, owls, redstarts and nuthatches use the tree for nesting."
     },
     {
@@ -86,6 +93,7 @@
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
+      "age": 200,
       "nature": "Coppiced hazel also provides shelter for ground-nesting birds, such as the nightingale, nightjar, yellowhammer and willow warbler. Hazel has long been associated with the dormouse (also known as the hazel dormouse). Not only are hazelnuts eaten by dormice to fatten up for hibernation, but in spring the leaves are a good source of caterpillars, which dormice also eat. Hazelnuts are also eaten by woodpeckers, nuthatches, tits, wood pigeons, jays and small mammals. Hazel flowers provide early pollen as a food for bees."},
     {
       "id":"9",
@@ -96,6 +104,7 @@
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
+      "age": 300,
       "nature": "Grey willow foliage is eaten by caterpillars of a number of moths, including the sallow kitten, sallow clearwing, dusky clearwing and lunar hornet clearwing. It is also a food plant for the purple emperor butterfly. Catkins provide an important early source of pollen and nectar for bees and other insects, and birds use grey willow to forage for caterpillars and insects"},
     {
       "id":"10",
@@ -106,6 +115,7 @@
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
+      "age": 300,
       "nature": "The main food plant for the purple emperor butterfly. Catkins provide an important early source of pollen and nectar for bees and other insects, and birds use goat willow to forage for caterpillars and insects."
     },
     {
