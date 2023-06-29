@@ -6,7 +6,7 @@
       "size": 35,
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
+        "Peaty": false,
         "Humus Iron, Brown Forest Soil": true
       },
       "nature": "The perfect home for iconic Scottish wildlife, such as the red squirrel, capercaillie, Scottish crossbill and the Scottish wildcat"
@@ -16,7 +16,7 @@
       "species": "Juniper", 
       "size": 10, 
       "soil":{
-        "Brown Forest Soil": true,
+        "Brown Forest Soil": false,
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
@@ -29,7 +29,7 @@
       "soil":{
         "Brown Forest Soil": true,
         "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Humus Iron, Brown Forest Soil": false
       },
       "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches and redpolls"
     },
@@ -38,7 +38,7 @@
       "species": "Silver Birch", 
       "size": 30, 
       "soil":{
-        "Brown Forest Soil": true,
+        "Brown Forest Soil": false,
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
@@ -49,7 +49,7 @@
       "species": "Alder", 
       "size": 28,
       "soil":{
-        "Brown Forest Soil": true,
+        "Brown Forest Soil": false,
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
@@ -157,7 +157,7 @@
       "species": "Holly", 
       "size": 15, 
       "soil":{
-        "Brown Forest Soil": true,
+        "Brown Forest Soil": false,
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
@@ -179,7 +179,7 @@
       "species": "Wild Cherry", 
       "size": 30, 
       "soil":{
-        "Brown Forest Soil": true,
+        "Brown Forest Soil": false,
         "Peaty": true,
         "Humus Iron, Brown Forest Soil": true
       },
