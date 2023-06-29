@@ -38,7 +38,7 @@ const ResultCarousel = ({ foundTrees, postTree, users, setUsers, putUser }) => {
       <h2> Basic Carousel Component</h2>
       <Slider {...settings}>
         {foundTrees.map((tree) => (
-            <TreeCard tree={tree}/>
+            <CarouselCard tree={tree} postTree={postTree}/>
         ))}
       </Slider>
     </div>
