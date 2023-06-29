@@ -24,7 +24,7 @@ public class Tree implements Serializable {
 
 
     @Column (name = "animals")
-    private ArrayList<String> animals;
+    private String nature;
 
     @Column (name = "size")
     private int size;
@@ -67,11 +67,11 @@ public class Tree implements Serializable {
     )
     private List<User> users;
 
-    public Tree(String species, int size, HashMap soil, ArrayList animals){
+    public Tree(String species, int size, HashMap soil, String nature){
         this.species = species;
         this.size = size;
         this.soil = new HashMap<>();
-        this.animals = new ArrayList<>();
+        this.nature = nature;
         this.locations = new ArrayList<>();
         this.users = new ArrayList<>();
     }
@@ -92,8 +92,8 @@ public class Tree implements Serializable {
         return soil;
     }
 
-    public ArrayList<String> getAnimals() {
-        return animals;
+    public String getNature() {
+        return nature;
     }
 
     public int getSize() {
@@ -113,8 +113,8 @@ public class Tree implements Serializable {
         this.soil = soil;
     }
 
-    public void setAnimals(ArrayList<String> animals) {
-        this.animals = animals;
+    public void setNature(String nature) {
+        this.nature = nature;
     }
 
     public void setSize(int size) {

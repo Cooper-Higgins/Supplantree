@@ -47,7 +47,7 @@ const UserContainer = ({data}) => {
 
       const handleTreePost = (tree) => {
         const request = new Request();
-        return request.post('/api/trees', tree)
+        request.post('/api/trees', tree)
       };
 
       const handleUserPut = (user) => {
@@ -62,10 +62,17 @@ const UserContainer = ({data}) => {
       }
 
     return (
-        <Routes>
-            <Route path="/:id" element={<TreeForm postTree={handleTreePost} putUser={handleUserPut}/>}/>
-        </Routes>
-        
+      <div>
+      {/* <TreeForm data={data} postTree={handleTreePost} putUser={handleUserPut} /> */}
+      {/* <ResultCarousel data={data.trees} /> */}
+      <div className="flex justify-center my-20">
+        <a href="http://localhost:3000/my-trees">
+          <button className="ml-10 bg-slate-200 hover:bg-slate-400 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
+            See my Trees
+          </button>
+        </a>
+      </div>
+    </div>
      );
 }
  
