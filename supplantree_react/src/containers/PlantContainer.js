@@ -1,28 +1,83 @@
 import React, { useEffect, useState } from "react";
-import ResultCarousel from "../components/Plant-Page/ResultCarousel";
 import Request from "../helpers/request";
-import TreeForm from "../components/Plant-Page/TreeForm";
+import { useParams, Route, Routes } from "react-router-dom";
+import User from "../components/User";
+import TreeForm from "../components/Plant-Page/TreeForm"
 
 import data from "../data.json";
 
 const PlantContainer = () => {
-  // const [trees, setTrees] = useState([])
+  const [users, setUsers] = useState([])
+    const [trees, setTrees] = useState(data.trees)
 
-  // useEffect(() => {
-  //     getTrees()
-  // },[])
+    useEffect(() => {
+        getUsers()
+    }, [])
 
-  // const getTrees = () => {
-  //     const request = new Request()
-  //     request.get("/api/trees")
-  //     .then((data) => {
-  //         setTrees(data)
-  //     })
-  // }
+    const getUsers = () => {
+        const request = new Request()
+        request.get("/api/users")
+        .then((data) => {
+            setUsers(data)
+        })
+    }
+
+    const UserWrapper = ({users, addTreeToUser}) => {
+        console.log("wrapper triggers");
+        const {id} = useParams()
+        let foundUser = findUserById(id)
+        return <User user={foundUser} addTreeToUser={addTreeToUser}/>
+    }
+
+    const findUserById = (id) => {
+        let foundUser = null;
+        for(let user of users){
+          if(user.id === parseInt(id)){
+            foundUser = user
+          }
+        }
+        return foundUser;
+      }
+
+      const addTreeToUser = () => {
+        const tree = trees[0]
+        const user = users[0]
+        user.trees.push(tree)
+        console.log(user);
+      }
+
+      const handleTreePost = (tree) => {
+        const request = new Request();
+        request.post('/api/trees', tree)
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          const retrievedTree = data;
+                const updatedUsers = [...users]
+                updatedUsers[0]["trees"].push(retrievedTree)
+                setUsers(updatedUsers)
+                handleUserPut(updatedUsers[0])
+        })
+        .catch((error) => {
+                console.error('Error occurred during tree post:', error);
+              });
+      };
+
+      const handleUserPut = (user) => {
+        console.log(user);
+        const request = new Request()
+        request.put(`/api/users/${user.id}`, user).then(() => {
+          console.log('successful');
+        })
+        .catch((error) => {
+          console.error(error)
+        })
+      }
 
   return (
     <div>
-      <TreeForm data={data} />
+      <TreeForm data={data} postTree={handleTreePost} putUser={handleUserPut} />
       {/* <ResultCarousel data={data.trees} /> */}
       <div className="flex justify-center my-20">
         <a href="http://localhost:3000/my-trees">
