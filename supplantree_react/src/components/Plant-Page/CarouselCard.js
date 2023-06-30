@@ -11,7 +11,6 @@ const CarouselCard = ({ tree, postTree, users, setUsers, putUser }) => {
   return (
     <div className="flex flex-col justify-center bg-pink-200 rounded-3xl border-8 border-white m-10">
       <form onSubmit={handleSubmit}>
-        <TreeCard tree={tree} postTree={postTree} />
         <br />
         <div className="flex flex-col justify-center p-6 gap-5">
       <p className="place-self-center">{tree.species}</p>
