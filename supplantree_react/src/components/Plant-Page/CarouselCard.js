@@ -7,17 +7,14 @@ const CarouselCard = ({ tree, postTree, users, setUsers, putUser }) => {
     postTree(tree);
   };
 
-  
   return (
-    <div>
+    <div className="flex flex-col justify-center bg-pink-200 rounded-3xl border-8 border-white m-10">
       <form onSubmit={handleSubmit}>
-        <TreeCard tree={tree} />
+        <TreeCard tree={tree} postTree={postTree} />
         <br />
-        <button type="submit">I've planted this!</button>
       </form>
     </div>
   );
 };
-
 
 export default CarouselCard;
