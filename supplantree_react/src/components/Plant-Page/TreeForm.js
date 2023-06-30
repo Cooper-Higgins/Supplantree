@@ -4,23 +4,11 @@ import Request from "../../helpers/request";
 import Login from "../Login/LoginPage";
 import ResultCarousel from "../Plant-Page/ResultCarousel";
 
-const TreeForm = ({ postTree, putUser, data }) => {
+const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers}) => {
   const pause = useNavigate();
 
   const [trees, setTrees] = useState([]);
-  const [users, setUsers] = useState([]);
   const [soil, setSoil] = useState([]);
-
-  useEffect(() => {
-    getUsers();
-  }, []);
-
-  const getUsers = () => {
-    const request = new Request();
-    request.get("/api/users").then((data) => {
-      setUsers(data);
-    });
-  };
 
   const handleTreeChange = (event) => {
     setTrees({ ...trees, [event.target.name]: event.target.value });
@@ -65,23 +53,20 @@ const TreeForm = ({ postTree, putUser, data }) => {
     const index = event.target.value;
     const selectedSoil = soilOptions[index].props.children;
     setSoil(selectedSoil);
-    console.log(selectedSoil);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     let plants = data.trees;
-    console.log("plants", plants[0]);
     let foundTrees = [];
     for (let item of plants) {
-      console.log("soil", item.soil[soil]);
-      console.log("statesoil", soil);
       if (item.soil[soil]) {
         foundTrees.push(item);
       }
     }
     console.log("foundTrees", foundTrees);
     setTrees(foundTrees);
+    console.log(trees);
   };
 
   return (
@@ -126,6 +111,7 @@ const TreeForm = ({ postTree, putUser, data }) => {
           users={users}
           setUsers={setUsers}
           putUser={putUser}
+          getUsers={getUsers}
         />
       )}
     </div>

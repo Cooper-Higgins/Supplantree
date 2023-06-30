@@ -1,8 +1,8 @@
 import React from 'react';
+import Request from '../helpers/request';
+import { useEffect, useState } from 'react';
 
 const MyTrees = ({users}) => {
-    console.log(users);
-    console.log(users[0]["trees"]);
 
     const usersTrees = users[0]["trees"].map((tree, index) => {
         return(

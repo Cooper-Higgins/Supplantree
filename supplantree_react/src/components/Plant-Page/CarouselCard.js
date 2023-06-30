@@ -1,10 +1,11 @@
 import React from "react";
 import TreeCard from "./TreeCard";
 
-const CarouselCard = ({ tree, postTree, users, setUsers, putUser }) => {
+const CarouselCard = ({ tree, postTree, users, setUsers, putUser, getUsers }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    postTree(tree);
+    console.log(tree);
+    postTree(tree)
   };
 
   
