@@ -13,11 +13,28 @@ import ErrorPage from "../components/ErrorPage";
 import Footer from "../components/Footer";
 import LandingPage from "../components/LandingPage";
 import UserContainer from "./UserContainer";
+import Request from "../helpers/request";
 
 import data from "../data.json"
 
 
+
     const MainContainer = () => {
+
+      const [users, setUsers] = useState([])
+    
+      useEffect(() => {
+        getUsers()
+      }, [])
+
+      const getUsers = () => {
+        const request = new Request()
+        request.get("/api/users")
+        .then((data) => {
+            setUsers(data)
+        })
+}
+
         return ( 
             <Router>
             <NavBar/>
@@ -27,7 +44,7 @@ import data from "../data.json"
                 <Route path="/plant" element={<PlantContainer/>}/>
                 <Route path="/learn" element={<LearnContainer/>}/>
                 <Route path="/about" element={<About/>}/>
-                <Route path="/my-trees" element={<MyTrees/>}/>
+                <Route path="/my-trees" element={<MyTrees users={users}/>}/>
                 <Route path="/account" element={<Account/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/create-account" element={<CreateAccount/>}/>
