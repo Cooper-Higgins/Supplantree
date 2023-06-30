@@ -1,8 +1,19 @@
 import React from 'react';
 
-const MyTrees = () => {
+const MyTrees = ({users}) => {
+    console.log(users);
+    console.log(users[0]["trees"]);
+
+    const usersTrees = users[0]["trees"].map((tree, index) => {
+        return(
+            <p>{tree.species}</p>
+        )
+    })
+
     return ( 
-        <h1>My Trees</h1>
+        <div>
+            {usersTrees}
+        </div>
      );
 }
  
