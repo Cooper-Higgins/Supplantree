@@ -24,10 +24,11 @@ const CarouselCard = ({ tree, postTree, users, setUsers, putUser }) => {
       <p className="place-self-center text-center">{tree.nature}</p>
       <button
         className="place-self-center border-4 border-white bg-slate-300 p-2 rounded-xl"
-        type="submit">
+        type="submit"
+      >
         I've planted this!
       </button>
-      </div>
+    </div>
       </form>
     </div>
   );
