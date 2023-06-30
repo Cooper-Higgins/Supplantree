@@ -4,24 +4,17 @@ import { useParams, Route, Routes } from "react-router-dom";
 import User from "../components/User";
 import TreeForm from "../components/Plant-Page/TreeForm";
 import data from "../data.json";
-const PlantContainer = () => {
-  const [users, setUsers] = useState([]);
+const PlantContainer = ({users, setUsers, getUsers}) => {
+
   const [trees, setTrees] = useState(data.trees);
-  useEffect(() => {
-    getUsers();
-  }, []);
-  const getUsers = () => {
-    const request = new Request();
-    request.get("/api/users").then((data) => {
-      setUsers(data);
-    });
-  };
+  
   const UserWrapper = ({ users, addTreeToUser }) => {
     console.log("wrapper triggers");
     const { id } = useParams();
     let foundUser = findUserById(id);
     return <User user={foundUser} addTreeToUser={addTreeToUser} />;
   };
+
   const findUserById = (id) => {
     let foundUser = null;
     for (let user of users) {
@@ -31,12 +24,12 @@ const PlantContainer = () => {
     }
     return foundUser;
   };
-  const addTreeToUser = () => {
-    const tree = trees[0];
-    const user = users[0];
-    user.trees.push(tree);
-    console.log(user);
-  };
+  // const addTreeToUser = () => {
+  //   const tree = trees[0];
+  //   const user = users[0];
+  //   user.trees.push(tree);
+  //   console.log(user);
+  // };
   const handleTreePost = (tree) => {
     const request = new Request();
     request
@@ -49,17 +42,22 @@ const PlantContainer = () => {
         const updatedUsers = [...users];
         updatedUsers[0]["trees"].push(retrievedTree);
         setUsers(updatedUsers);
+        console.log(updatedUsers[0]);
         handleUserPut(updatedUsers[0]);
       })
       .catch((error) => {
         console.error("Error occurred during tree post:", error);
       });
   };
+
   const handleUserPut = (user) => {
     console.log(user);
     const request = new Request();
     request
       .put(`/api/users/${user.id}`, user)
+      .then(()=>{
+        getUsers()
+      })
       .then(() => {
         console.log("successful");
       })
@@ -67,9 +65,10 @@ const PlantContainer = () => {
         console.error(error);
       });
   };
+
   return (
     <div className="bg-green-400 min-h-screen">
-      <TreeForm data={data} postTree={handleTreePost} putUser={handleUserPut} />
+      <TreeForm data={data} users={users} setUsers={setUsers} postTree={handleTreePost} putUser={handleUserPut} getUsers={getUsers} />
       <div className="flex justify-center mt-10">
         <a href="http://localhost:3000/my-trees">
           <button className=" bg-slate-300 border-4 border-white hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg">

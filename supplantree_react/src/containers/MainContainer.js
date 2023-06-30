@@ -41,7 +41,7 @@ import data from "../data.json"
             <div className="main-container">
               <Routes>
                 <Route path="/" element={<LandingPage />}/>
-                <Route path="/plant" element={<PlantContainer/>}/>
+                <Route path="/plant" element={<PlantContainer users={users} setUsers={setUsers} getUsers={getUsers}/>}/>
                 <Route path="/learn" element={<LearnContainer/>}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/my-trees" element={<MyTrees users={users}/>}/>
