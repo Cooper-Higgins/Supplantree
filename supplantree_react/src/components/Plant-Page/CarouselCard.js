@@ -23,10 +23,11 @@ const CarouselCard = ({
           <p className="place-self-center">{tree.species}</p>
           <img
             className="w-10/12 place-self-center md:w-8/12 m-2 p-4 rounded-3xl"
-            src="./images/first_image.jpg"
+            src={tree.image}
             alt="placeholder"
           ></img>
-          <p className="place-self-center">Maximum Height: {tree.size}</p>
+          <p className="place-self-center">Maximum Height: {tree.size}m</p>
+          <p className="place-self-center">Maximum Age: {tree.age} Years</p>
           <p className="place-self-center text-center">{tree.nature}</p>
           <button
             className="place-self-center border-4 border-white bg-slate-300 p-2 rounded-xl"
