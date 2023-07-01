@@ -12,7 +12,7 @@ const About = () => {
         </h1>
       </div>
       <div className="flex flex-col m-6 gap-6 flex-wrap">
-        <div className="flex flex-col md:flex-row bg-pink-200 border-8 border-white rounded-3xl">
+        <div className="flex flex-col md:flex-row bg-pink-200 border-8 border-white rounded-3xl shadow-xl">
           <img
             className="w-10/12 place-self-center md:w-5/12 m-2 p-4 rounded-full"
             src="./images/first_image.jpg"
@@ -29,7 +29,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 border-8 border-white rounded-3xl">
+        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 border-8 border-white rounded-3xl shadow-xl">
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-full"
             src="./images/second_image.jpg"
@@ -44,7 +44,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row bg-pink-200 border-8 border-white rounded-3xl">
+        <div className="flex flex-col md:flex-row bg-pink-200 border-8 border-white rounded-3xl shadow-2xl">
           <img
             className="w-10/12 place-self-center md:w-5/12 m-2 p-4 rounded-full"
             src="./images/first_image.jpg"
@@ -59,7 +59,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 border-8 border-white rounded-3xl">
+        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 border-8 border-white rounded-3xl shadow-2xl">
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-full"
             src="./images/second_image.jpg"
