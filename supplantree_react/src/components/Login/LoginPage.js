@@ -12,13 +12,13 @@ const Login = () => {
               <br />
               <input className="p-1" type="password" placeholder="Password" />
               <br />
-              <button className="place-self-center bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg">
+              <button className="place-self-center bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
                 Login
               </button>
             </form>
             <div className="flex justify-center">
               <a href="http://localhost:3000/create-account">
-                <button className="bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg">
+                <button className="bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
                   Create Account
                 </button>
               </a>

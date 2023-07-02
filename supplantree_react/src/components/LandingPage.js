@@ -2,16 +2,18 @@ import React from "react";
 
 const LandingPage = () => {
   return (
-    <main className="font-Inter min-h-screen bg-green-400">
+    <main className="min-h-screen bg-green-400">
       <div className="flex justify-evenly gap-8 md:gap-4 flex-col-reverse md:flex-row pt-8">
-        <div className="flex flex-col gap-12 md:gap-20 justify-center text-center md:w-5/12">
+        <div className="flex flex-col gap-8 md:gap-12 justify-center text-center md:w-5/12">
           <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl m-4">
-            Learn the soil, make the change
+            Learn the Soil, Make a Change that Matters
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl m-4">
-            This is me talking a little bit more about why it is good to plant a
-            tree. This is another sentence in which I am continuing to talk
-            about a tree.
+          <p className="text-lg sm:text-xl md:text-2xl m-4 font-thin">
+            Unsure where to begin with your tree-planting journey?
+          </p>
+          <p className="text-lg sm:text-xl md:text-2xl m-4 font-thin">
+            Here you can learn more about Scotland's soils to choose the species
+            that fits best, all while documenting your growing efforts
           </p>
           <div className="flex justify-evenly mb-20">
             <a href="http://localhost:3000/plant">
@@ -32,12 +34,8 @@ const LandingPage = () => {
           alt="scotland map"
         ></img>
       </div>
-      {/* top container */}
-
-      <div className="flex flex-col flex-wrap m-4 gap-4">
-        {/* second container */}
-
-        <div className="flex flex-col md:flex-row bg-pink-200 rounded-3xl border-8 border-white">
+      <div className="flex flex-col flex-wrap m-4 gap-8">
+        <div className="flex flex-col md:flex-row bg-pink-200 rounded-3xl border-8 border-white shadow-lg shadow-gray-600">
           <img
             className="w-10/12 place-self-center md:w-5/12 m-2 p-4 rounded-3xl"
             src="./images/first_image.jpg"
@@ -46,12 +44,12 @@ const LandingPage = () => {
           <div className="flex flex-col justify-center text-center gap-10 md:gap-20 m-6 text-green-950">
             <h1 className="text-4xl md:text-5xl font-bold">Learn Your Land</h1>
             <p className="text-lg md:text-2xl font-extralight">
-              Understand Scotland's soils and which tree would best suit your
-              land
+              Learn the broad range of Scotland's soils to better understand
+              what and how you should be planting
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 rounded-3xl border-8 border-white">
+        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 rounded-3xl border-8 border-white shadow-lg shadow-gray-600">
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-3xl"
             src="./images/second_image.jpg"
@@ -60,11 +58,12 @@ const LandingPage = () => {
           <div className="flex flex-col justify-center text-center gap-10 md:gap-20 m-6 text-green-950">
             <h1 className="text-4xl md:text-5xl font-bold">Pick the Tree</h1>
             <p className="text-lg md:text-2xl">
-              Choose your tree species based on our recommendations
+              From the many native species of Scotland's rich ecology, pick a
+              tree based on our recommendations
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-evenly bg-pink-200 rounded-3xl border-8 border-white">
+        <div className="flex flex-col md:flex-row justify-evenly bg-pink-200 rounded-3xl border-8 border-white shadow-lg shadow-gray-600">
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-3xl"
             src="./images/third_image.jpg"

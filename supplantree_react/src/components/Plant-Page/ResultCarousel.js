@@ -4,7 +4,14 @@ import CarouselCard from "./CarouselCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const ResultCarousel = ({ foundTrees, postTree, users, setUsers, putUser, getUsers }) => {
+const ResultCarousel = ({
+  foundTrees,
+  postTree,
+  users,
+  setUsers,
+  putUser,
+  getUsers,
+}) => {
   if (!foundTrees || foundTrees.length === 0) {
     return <p>No trees found.</p>;
   }
@@ -14,7 +21,7 @@ const ResultCarousel = ({ foundTrees, postTree, users, setUsers, putUser, getUse
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 1000,
@@ -23,7 +30,7 @@ const ResultCarousel = ({ foundTrees, postTree, users, setUsers, putUser, getUse
     <div>
       <Slider {...settings}>
         {foundTrees.map((tree) => (
-          <CarouselCard tree={tree} postTree={postTree} getUsers={getUsers}/>
+          <CarouselCard tree={tree} postTree={postTree} getUsers={getUsers} />
         ))}
       </Slider>
     </div>
