@@ -3,9 +3,9 @@ import React from "react";
 const Login = () => {
   return (
     <div className="bg-green-400 min-h-screen">
-      <h1 className="text-6xl p-4">Login</h1>
+      <h1 className="text-4xl md:text-6xl p-4">Login</h1>
       <div className="flex justify-center">
-        <div className="flex flex-col justify-center w-1/3">
+        <div className="flex flex-col justify-center w-2/3 md:w-1/3">
           <div className="flex flex-col justify-center">
             <form className="flex flex-col justify-center bg-pink-200 border-4 border-white rounded-2xl p-10 shadow-lg shadow-gray-600">
               <input className="p-1" type="text" placeholder="Email" />

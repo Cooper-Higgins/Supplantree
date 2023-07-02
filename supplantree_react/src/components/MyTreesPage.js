@@ -14,7 +14,7 @@ const MyTrees = ({ users }) => {
 
   return (
     <div className="bg-green-400 min-h-screen">
-      <h1 className="text-6xl p-4">Your Digital Forest</h1>
+      <h1 className="text-4xl md:text-6xl p-4">Your Digital Forest</h1>
       <div className="flex flex-col md:flex-row flex-wrap gap-10 justify-evenly p-8">
         {usersTrees}
       </div>
