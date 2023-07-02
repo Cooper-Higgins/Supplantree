@@ -8,7 +8,7 @@ const Login = () => {
         <div className="flex flex-col justify-center w-1/3">
           <div className="flex flex-col justify-center">
             <form className="flex flex-col justify-center bg-pink-200 border-4 border-white rounded-2xl p-10">
-              <input className="p-1" type="text" placeholder="Username" />
+              <input className="p-1" type="text" placeholder="Email" />
               <br />
               <input className="p-1" type="password" placeholder="Password" />
               <br />
