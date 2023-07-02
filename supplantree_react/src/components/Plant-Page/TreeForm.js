@@ -4,7 +4,7 @@ import Request from "../../helpers/request";
 import Login from "../Login/LoginPage";
 import ResultCarousel from "../Plant-Page/ResultCarousel";
 
-const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers}) => {
+const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers }) => {
   const pause = useNavigate();
 
   const [trees, setTrees] = useState([]);
@@ -98,7 +98,7 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers}) => {
         <br />
         <br />
         <button
-          className="bg-pink-200 border-4 rounded-lg place-self-center w-1/4"
+          className="bg-pink-200 border-4 rounded-lg shadow-lg shadow-gray-600 place-self-center w-1/4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110"
           type="submit"
         >
           Submit

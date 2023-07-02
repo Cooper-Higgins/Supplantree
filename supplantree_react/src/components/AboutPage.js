@@ -8,7 +8,7 @@ const About = () => {
           <h1 className="text-6xl p-10">About Us</h1>
         </div>
         <h1 className="text-3xl p-10 text-center">
-          Learn more about our dev team!
+          Learn more about our development team!
         </h1>
       </div>
       <div className="flex flex-col m-6 gap-6 flex-wrap">
@@ -18,14 +18,14 @@ const About = () => {
             src="./images/first_image.jpg"
             alt="placeholder"
           ></img>
-          <div className="flex flex-col justify-center text-center gap-10 md:gap-20 m-6 text-green-950">
+          <div className="flex flex-col justify-center text-center gap-5 md:gap-10 m-6 text-green-950">
             <h1 className="text-4xl md:text-5xl font-bold">
               Jamie Cooper-Higgins
             </h1>
             <p className="text-lg md:text-xl font-light">
               Understand Scotland's soils and which tree would best suit your
-              landUnderstand Scotland's soils and which tree would best suit
-              your landUnderstand Scotland's soils and which tree would best
+              land soils and which tree would best suit your landUnderstand
+              Scotland's soils and which tree would bestsoils and which tree
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ const About = () => {
             src="./images/second_image.jpg"
             alt="placeholder"
           ></img>
-          <div className="flex flex-col justify-center text-center gap-10 md:gap-20 m-8 text-green-950">
+          <div className="flex flex-col justify-center text-center gap-5 md:gap-10 m-8 text-green-950">
             <h1 className="text-4xl md:text-5xl font-bold">Zoe Eustace</h1>
             <p className="text-lg md:text-xl">
               Choose your tree species based on our recommendations soils and
@@ -50,7 +50,7 @@ const About = () => {
             src="./images/first_image.jpg"
             alt="placeholder"
           ></img>
-          <div className="flex flex-col justify-center text-center gap-10 md:gap-20 m-8 text-green-950">
+          <div className="flex flex-col justify-center text-center gap-5 md:gap-10 m-8 text-green-950">
             <h1 className="text-4xl md:text-5xl font-bold">Neil Hutton</h1>
             <p className="text-lg md:text-xl font-extralight">
               Understand Scotland's soils and which tree would best suit your
@@ -65,14 +65,15 @@ const About = () => {
             src="./images/second_image.jpg"
             alt="placeholder"
           ></img>
-          <div className="flex flex-col justify-center text-center gap-10 md:gap-20 m-8 text-green-950">
+          <div className="flex flex-col justify-center gap-5 md:gap-10 m-8 text-green-950">
             <h1 className="text-4xl md:text-5xl font-bold">
               Richard Dalrymple
             </h1>
             <p className="text-lg md:text-xl">
-              Choose your tree species based on our recommendationssoils and
-              which tree would best suit your landUnderstand Scotland's soils
-              and which tree would bestsoils and which tree would best suit your
+              Richard comes to Supplantree from an artistic background, with an
+              Honours Degree in Contemporary Art Practice under his belt. If you
+              are seeing or interacting with it, the odds are he had a hand in
+              it!
             </p>
           </div>
         </div>
