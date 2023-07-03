@@ -1,6 +1,6 @@
 // Package and CSS imports
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
 import PlantContainer from "./PlantContainer";
 import LearnContainer from "./LearnContainer";
 import About from "../components/AboutPage";
@@ -16,12 +16,15 @@ import UserContainer from "./UserContainer";
 import Request from "../helpers/request";
 
 import data from "../data.json"
+import LocationContainer from "./LocationContainer";
 
 
 
     const MainContainer = () => {
 
       const [users, setUsers] = useState([])
+      const [trees, setTrees] = useState(data.trees);
+      const [locations, setLocations] = useState([])
     
       useEffect(() => {
         getUsers()
@@ -35,21 +38,72 @@ import data from "../data.json"
         })
 }
 
+      const getTrees = () => {
+        const request = new Request()
+        request.get("/api/trees")
+        .then((data) => {
+          setTrees(data)
+        })
+      }
+
+      const handleTreePut = (tree) => {
+        console.log(tree);
+        const request = new Request();
+        request
+        .put(`/api/trees/${tree.id}`, tree)
+        .then(() => {
+          getTrees();
+        })
+        .then(() => {
+          console.log("successful");
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+      }
+
+      const handleDelete = (id) => {
+        const request = new Request()
+        const url = '/api/trees' + id;
+        request.delete(url)
+        .then(() => {
+          window.location = '/my-trees'
+        })
+      }
+
+      const findTreeById = (id) => {
+        let foundTree = null;
+        for (let tree of trees) {
+          if (tree.id === parseInt(id)) {
+            foundTree = tree;
+          }
+        }
+        return foundTree;
+      };
+
+      // const TreeDetailWrapper = () => {
+      //   console.log("wrapper triggers");
+      //   const {id} = useParams();
+      //   let foundTree = findTreeById(id)
+      //   return 
+      // }
+
         return ( 
             <Router>
             <NavBar/>
             <div className="main-container">
               <Routes>
                 <Route path="/" element={<LandingPage />}/>
-                <Route path="/plant" element={<PlantContainer users={users} setUsers={setUsers} getUsers={getUsers}/>}/>
+                <Route path="/plant" element={<PlantContainer users={users} setUsers={setUsers} getUsers={getUsers} trees={trees} setTrees={setTrees}/>}/>
                 <Route path="/learn" element={<LearnContainer/>}/>
                 <Route path="/about" element={<About/>}/>
-                <Route path="/my-trees" element={<MyTrees users={users}/>}/>
+                <Route path="/my-trees" element={<MyTrees users={users} handleDelete={handleDelete}/>}/>
                 <Route path="/account" element={<Account/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/create-account" element={<CreateAccount/>}/>
                 <Route path="/users/*" element={<UserContainer data = {data}/>}/>
                 <Route path="*" element={<ErrorPage/>} />
+                <Route path="/locations" element={<LocationContainer trees={trees} setTrees={setTrees} locations={locations} setLocations={setLocations} handleTreePut={handleTreePut}/>} />
               </Routes>
             </div>
             <Footer />

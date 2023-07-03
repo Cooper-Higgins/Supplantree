@@ -3,8 +3,13 @@ import Request from "../helpers/request";
 import { useEffect, useState } from "react";
 import {motion} from "framer-motion"
 
-const MyTrees = ({ users }) => {
+const MyTrees = ({ users, handleDelete }) => {
+
+  
+
   const usersTrees = users[0]["trees"].map((tree, index) => {
+    const onDelete = () => {
+      handleDelete(tree.id)
 
     const item = {
       hidden: {opacity: 0},
@@ -19,6 +24,8 @@ const MyTrees = ({ users }) => {
               src={tree.image}
               alt="placeholder"
             ></img>
+        <br/>
+        <button onClick={onDelete}>Delete {tree.species}</button>
       </motion.div>
     );
   });

@@ -5,26 +5,30 @@
       "species": "Scots Pine", 
       "size": 35,
       "soil":{
-        "Brown Forest Soil": true,
-        "Peaty": false,
-        "Humus Iron, Brown Forest Soil": true
+        "Brown Forest Soil": false,
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": true
       },
       "age": 700,
       "nature": "The perfect home for iconic Scottish wildlife, such as the red squirrel, capercaillie, Scottish crossbill, and the Scottish wildcat.",
-      "image": "./images/natureImages/Scots_Pine.png"
+      "image": "./images/natureImages/Scots_Pine.png",
+      "locations": []
     },
     {
       "id":"2",
       "species": "Juniper", 
       "size": 10, 
       "soil":{
-        "Brown Forest Soil": false,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Brown Forest Soil": true,
+        "Blanket Peats": false,
+        "Humus Iron": true,
+        "Peaty Gleys": true
       },
       "age": 200,
       "nature": "Common juniper provides dense cover for nesting birds, such as the goldcrest and firecrest, and in northern upland areas, the (famous) black grouse.",
-      "image": "./images/natureImages/Juniper.png"
+      "image": "./images/natureImages/Juniper.png",
+      "locations": []
     },
     {
       "id":"3",
@@ -32,38 +36,44 @@
       "size": 30, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": false
+        "Blanket Peats": true,
+        "Humus Iron": true,
+        "Peaty Gleys": true
       },
       "age": 90,
       "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls.",
-      "image": "./images/natureImages/Downy_Birch.png"
+      "image": "./images/natureImages/Downy_Birch.png",
+      "locations": []
     },
     {
       "id":"4",
       "species": "Silver Birch", 
       "size": 30, 
       "soil":{
-        "Brown Forest Soil": false,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Brown Forest Soil": true,
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": false
       },
       "age": 100,
       "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls",
-      "image": "./images/natureImages/Silver_Birch.jpeg"
+      "image": "./images/natureImages/Silver_Birch.jpeg",
+      "locations": []
     },
     {
       "id":"5",
       "species": "Alder", 
       "size": 28,
       "soil":{
-        "Brown Forest Soil": false,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Brown Forest Soil": true,
+        "Blanket Peats": false,
+        "Humus Iron": true,
+        "Peaty Gleys": true
       },
       "age": 60,
       "nature": "The roots make perfect nests for otters and the seeds are eaten by siskin. It also improves soil fertility through its ability to fix nitrogen from the air.",
-      "image": "./images/natureImages/Alder.png"
+      "image": "./images/natureImages/Alder.png",
+      "locations": []
     },
     {
       "id":"6",
@@ -71,12 +81,14 @@
       "size": 40, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": false
       },
       "age": 1000,
       "nature": "Oak trees support more wildlife than other trees, eg the deadwood cavities providing habitats for birds and bats. Squirrels, jays and badgers eat their acorns.",
-      "image": "./images/natureImages/Sessile_Oak.png"
+      "image": "./images/natureImages/Sessile_Oak.png",
+      "locations": []
     },
     {
       "id":"7",
@@ -84,12 +96,14 @@
       "size": 35, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": false
       },
       "age": 400,
       "nature": "Due to their size, they provide perfect cover for wildflowers which in turn support a wide range of insects including the rare high brown fritillery butterfly.",
-      "image": "./images/natureImages/Ash.png"
+      "image": "./images/natureImages/Ash.png",
+      "locations": []
     },
     {
       "id":"8",
@@ -97,36 +111,44 @@
       "size": 12, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": true
       },
       "age": 200,
+      "nature": "Hazel has long been associated with the dormouse. Not only are hazelnuts eaten by dormice to fatten up for hibernation, but in spring the leaves are a good source of caterpillars, which dormice also eat.",
       "image": "./images/natureImages/Hazel.png",
-      "nature": "Hazel has long been associated with the dormouse. Not only are hazelnuts eaten by dormice to fatten up for hibernation, but in spring the leaves are a good source of caterpillars, which dormice also eat."},
+      "locations": []
+    },
     {
       "id":"9",
       "species": "Grey Willow", 
       "size": 10, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": false
       },
       "age": 300,
       "image": "./images/natureImages/Grey_Willow.png",
-      "nature": "Grey willow foliage is eaten by caterpillars of a number of moths, including the sallow kitten, sallow clearwing, dusky clearwing and lunar hornet clearwing. It is also a food plant for the purple emperor butterfly."},
+      "nature": "Grey willow foliage is eaten by caterpillars of a number of moths, including the sallow kitten, sallow clearwing, dusky clearwing and lunar hornet clearwing. It is also a food plant for the purple emperor butterfly.",
+      "locations": []
+    },
     {
       "id":"10",
       "species": "Goat Willow", 
       "size": 10, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": true
       },
       "age": 300,
       "image": "./images/natureImages/Goat_Willow.png",
-      "nature": "The main food plant for the purple emperor butterfly. Catkins provide an important early source of pollen and nectar for bees and other insects, and birds use goat willow to forage for caterpillars and insects."
+      "nature": "The main food plant for the purple emperor butterfly. Catkins provide an important early source of pollen and nectar for bees and other insects, and birds use goat willow to forage for caterpillars and insects.",
+      "locations": []
     },
     {
       "id":"11",
@@ -134,12 +156,14 @@
       "size": 15, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": true,
+        "Peaty Gleys": true
       },
       "age": 200,
       "image": "./images/natureImages/Rowan.png",
-      "nature": "Flowers provide pollen and nectar for bees and other pollinating insects, while the berries are a rich source of autumn food for birds, especially the blackbird, mistle thrush, redstart, redwing, song thrush, fieldfare, and waxwing."
+      "nature": "Flowers provide pollen and nectar for bees and other pollinating insects, while the berries are a rich source of autumn food for birds, especially the blackbird, mistle thrush, redstart, redwing, song thrush, fieldfare, and waxwing.",
+      "locations": []
     },
     {
       "id":"12",
@@ -147,12 +171,14 @@
       "size": 25, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": true,
+        "Peaty Gleys": true
       },
       "age": 200,
       "image": "./images/natureImages/Aspen.png",
-      "nature": "Aspen are the preferred species for beavers, and provide nesting opportunities for birds such as the woodpecker."
+      "nature": "Aspen are the preferred species for beavers, and provide nesting opportunities for birds such as the woodpecker.",
+      "locations": []
     },
     {
       "id":"13",
@@ -160,12 +186,14 @@
       "size": 30, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": true
       },
       "age": 200,
       "image": "./images/natureImages/Wych_Elm.png",
-      "nature": "Many birds eat the seeds and leaves provide food for caterpillars of many moths, and the caterpillar of the white-letter hairstreak butterfly"
+      "nature": "Many birds eat the seeds and leaves provide food for caterpillars of many moths, and the caterpillar of the white-letter hairstreak butterfly",
+      "locations": []
     },
     {
       "id":"14",
@@ -173,25 +201,29 @@
       "size": 15, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": false
       },
       "age": 200,
       "image": "./images/natureImages/Hawthorn.png",
-      "nature": "The haws are eaten by migrating birds, such as redwings, fieldfares, and thrushes. The foliage makes fantastic nesting shelters for many species of birds."
+      "nature": "The haws are eaten by migrating birds, such as redwings, fieldfares, and thrushes. The foliage makes fantastic nesting shelters for many species of birds.",
+      "locations": []
     },
     {
       "id":"15",
       "species": "Holly", 
       "size": 15, 
       "soil":{
-        "Brown Forest Soil": false,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Brown Forest Soil": true,
+        "Blanket Peats": false,
+        "Humus Iron": true,
+        "Peaty Gleys": false
       },
       "age": 200,
       "image": "./images/natureImages/Holly.png",
-      "nature": "The leaves provide great nesting opportunities for birds and the dry leaf litter can be used for hibernation by hedgehogs and other small mammals. Deer eat the smooth leaves at the top."
+      "nature": "The leaves provide great nesting opportunities for birds and the dry leaf litter can be used for hibernation by hedgehogs and other small mammals. Deer eat the smooth leaves at the top.",
+      "locations": []
     },
     {
       "id":"16",
@@ -199,25 +231,29 @@
       "size": 15, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": false
       },
       "age": 200,
       "image": "./images/natureImages/Elder.png",
-      "nature": "Dormice and bank voles eat both the fruit and flowers, berries are eaten by many insects and animals, fruit provides nectar and pollen."
+      "nature": "Dormice and bank voles eat both the fruit and flowers, berries are eaten by many insects and animals, fruit provides nectar and pollen.",
+      "locations": []
     },
     {
       "id":"17",
       "species": "Wild Cherry", 
       "size": 30, 
       "soil":{
-        "Brown Forest Soil": false,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Brown Forest Soil": true,
+        "Blanket Peats": false,
+        "Humus Iron": true,
+        "Peaty Gleys": true
       },
       "age": 200,
       "image": "./images/natureImages/Wild_Cherry.png",
-      "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse."
+      "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+      "locations": []
     },
     {
       "id":"18",
@@ -225,12 +261,14 @@
       "size": 25, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": false
       },
       "age": 200,
       "image": "./images/natureImages/Bird_Cherry.png",
-      "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse."
+      "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+      "locations": []
     },
     {
       "id":"19",
@@ -238,12 +276,14 @@
       "size": 10, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": false
       },
       "age": 200,
       "image": "./images/natureImages/Crab_Apple.png",
-      "nature": "The flowers provide an important source of early pollen and nectar for bees and other insects. The fruit is eaten by birds such as thrushes, blackbirds and crows, and mammals such as mice, voles, foxes, and badgers."
+      "nature": "The flowers provide an important source of early pollen and nectar for bees and other insects. The fruit is eaten by birds such as thrushes, blackbirds and crows, and mammals such as mice, voles, foxes, and badgers.",
+      "locations": []
     },
     {
       "id":"20",
@@ -251,69 +291,1235 @@
       "size": 3, 
       "soil":{
         "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": false
       },
       "age": 200,
       "image": "./images/natureImages/Dog_Rose.png",
-      "nature": "Dog rose flowers are an important nectar source for insects and its fruits are a food source for birds such as blackbirds, redwings, and waxwings."
+      "nature": "Dog rose flowers are an important nectar source for insects and its fruits are a food source for birds such as blackbirds, redwings, and waxwings.",
+      "locations": []
     },
     {
       "id":"21",
       "species": "Arran Whitebeam", 
       "size": 7, 
       "soil":{
-        "Brown Forest Soil": true,
-        "Peaty": true,
-        "Humus Iron, Brown Forest Soil": true
+        "Brown Forest Soil": false,
+        "Blanket Peats": false,
+        "Humus Iron": false,
+        "Peaty Gleys": false
       },
       "age": 200,
       "image": "./images/natureImages/Arran_Whitebeam.png",
-      "nature": "Arran whitebeam produces good pollen when growing in favourable conditions. The wild deer love the leaves (which is one of the reasons the tree population is struggling) and birds eat the ripe berries."
+      "nature": "Arran whitebeam produces good pollen when growing in favourable conditions. The wild deer love the leaves (which is one of the reasons the tree population is struggling) and birds eat the ripe berries.",
+      "locations": []
     }
   ],
   "locations":[
     {
       "id":"1",
-      "name":"Dundee and Fife",
+      "name":"Central Scotland",
       "soil":"Brown Forest Soil",
-      "weather": "Sunny"
+      "weather": "Sunny",
+      "trees": [
+        {
+          "id":"4",
+          "species": "Silver Birch", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 100,
+          "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls",
+          "image": "./images/natureImages/Silver_Birch.jpeg",
+          "locations": []
+        },
+        {
+          "id":"5",
+          "species": "Alder", 
+          "size": 28,
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 60,
+          "nature": "The roots make perfect nests for otters and the seeds are eaten by siskin. It also improves soil fertility through its ability to fix nitrogen from the air.",
+          "image": "./images/natureImages/Alder.png",
+          "locations": []
+        },
+        {
+          "id":"7",
+          "species": "Ash", 
+          "size": 35, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 400,
+          "nature": "Due to their size, they provide perfect cover for wildflowers which in turn support a wide range of insects including the rare high brown fritillery butterfly.",
+          "image": "./images/natureImages/Ash.png",
+          "locations": []
+        },
+        {
+          "id":"8",
+          "species": "Hazel", 
+          "size": 12, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "nature": "Hazel has long been associated with the dormouse. Not only are hazelnuts eaten by dormice to fatten up for hibernation, but in spring the leaves are a good source of caterpillars, which dormice also eat.",
+          "image": "./images/natureImages/Hazel.png",
+          "locations": []
+        },
+        {
+          "id":"11",
+          "species": "Rowan", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Rowan.png",
+          "nature": "Flowers provide pollen and nectar for bees and other pollinating insects, while the berries are a rich source of autumn food for birds, especially the blackbird, mistle thrush, redstart, redwing, song thrush, fieldfare, and waxwing.",
+          "locations": []
+        },
+        {
+          "id":"9",
+          "species": "Grey Willow", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 300,
+          "image": "./images/natureImages/Grey_Willow.png",
+          "nature": "Grey willow foliage is eaten by caterpillars of a number of moths, including the sallow kitten, sallow clearwing, dusky clearwing and lunar hornet clearwing. It is also a food plant for the purple emperor butterfly.",
+          "locations": []
+        },
+        {
+          "id":"10",
+          "species": "Goat Willow", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 300,
+          "image": "./images/natureImages/Goat_Willow.png",
+          "nature": "The main food plant for the purple emperor butterfly. Catkins provide an important early source of pollen and nectar for bees and other insects, and birds use goat willow to forage for caterpillars and insects.",
+          "locations": []
+        },
+        {
+          "id":"12",
+          "species": "Aspen", 
+          "size": 25, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Aspen.png",
+          "nature": "Aspen are the preferred species for beavers, and provide nesting opportunities for birds such as the woodpecker.",
+          "locations": []
+        },
+        {
+          "id":"14",
+          "species": "Hawthorn", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Hawthorn.png",
+          "nature": "The haws are eaten by migrating birds, such as redwings, fieldfares, and thrushes. The foliage makes fantastic nesting shelters for many species of birds.",
+          "locations": []
+        },
+        {
+          "id":"15",
+          "species": "Holly", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Holly.png",
+          "nature": "The leaves provide great nesting opportunities for birds and the dry leaf litter can be used for hibernation by hedgehogs and other small mammals. Deer eat the smooth leaves at the top.",
+          "locations": []
+        },
+        {
+          "id":"2",
+          "species": "Juniper", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "nature": "Common juniper provides dense cover for nesting birds, such as the goldcrest and firecrest, and in northern upland areas, the (famous) black grouse.",
+          "image": "./images/natureImages/Juniper.png",
+          "locations": []
+        },
+        {
+          "id":"16",
+          "species": "Elder", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Elder.png",
+          "nature": "Dormice and bank voles eat both the fruit and flowers, berries are eaten by many insects and animals, fruit provides nectar and pollen.",
+          "locations": []
+        },
+        {
+          "id":"17",
+          "species": "Wild Cherry", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Wild_Cherry.png",
+          "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+          "locations": []
+        },
+        {
+          "id":"18",
+          "species": "Bird Cherry", 
+          "size": 25, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Bird_Cherry.png",
+          "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+          "locations": []
+        },
+        {
+          "id":"19",
+          "species": "Crab Apple Tree", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Crab_Apple.png",
+          "nature": "The flowers provide an important source of early pollen and nectar for bees and other insects. The fruit is eaten by birds such as thrushes, blackbirds and crows, and mammals such as mice, voles, foxes, and badgers.",
+          "locations": []
+        }
+      ]
     },
     {
       "id":"2",
-      "name":"Outer Hebrides",
-      "soil":"Peaty",
-      "weather": "Very rainy"
+      "name":"Hebrides",
+      "soil":"Peaty Gleys",
+      "weather": "Very rainy",
+      "trees": [
+        {
+          "id":"3",
+          "species": "Downy Birch", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": true,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 90,
+          "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls.",
+          "image": "./images/natureImages/Downy_Birch.png",
+          "locations": []
+        },
+        {
+          "id":"11",
+          "species": "Rowan", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Rowan.png",
+          "nature": "Flowers provide pollen and nectar for bees and other pollinating insects, while the berries are a rich source of autumn food for birds, especially the blackbird, mistle thrush, redstart, redwing, song thrush, fieldfare, and waxwing.",
+          "locations": []
+        },
+        {
+          "id":"10",
+          "species": "Goat Willow", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 300,
+          "image": "./images/natureImages/Goat_Willow.png",
+          "nature": "The main food plant for the purple emperor butterfly. Catkins provide an important early source of pollen and nectar for bees and other insects, and birds use goat willow to forage for caterpillars and insects.",
+          "locations": []
+        },
+        {
+          "id":"12",
+          "species": "Aspen", 
+          "size": 25, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Aspen.png",
+          "nature": "Aspen are the preferred species for beavers, and provide nesting opportunities for birds such as the woodpecker.",
+          "locations": []
+        },
+        {
+          "id":"17",
+          "species": "Wild Cherry", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Wild_Cherry.png",
+          "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+          "locations": []
+        }
+      ]
     },
     {
       "id":"3",
-      "name":"Western Scotland",
-      "soil":"Peaty",
-      "weather": "Very rainy"
+      "name":"South-West Scotland",
+      "soil":"Brown Forest Soil",
+      "weather": "Very rainy",
+      "trees": [
+        {
+          "id":"3",
+          "species": "Downy Birch", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": true,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 90,
+          "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls.",
+          "image": "./images/natureImages/Downy_Birch.png",
+          "locations": []
+        },
+        {
+          "id":"4",
+          "species": "Silver Birch", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 100,
+          "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls",
+          "image": "./images/natureImages/Silver_Birch.jpeg",
+          "locations": []
+        },
+        {
+          "id":"5",
+          "species": "Alder", 
+          "size": 28,
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 60,
+          "nature": "The roots make perfect nests for otters and the seeds are eaten by siskin. It also improves soil fertility through its ability to fix nitrogen from the air.",
+          "image": "./images/natureImages/Alder.png",
+          "locations": []
+        },
+        {
+          "id":"6",
+          "species": "Sessile Oak", 
+          "size": 40, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 1000,
+          "nature": "Oak trees support more wildlife than other trees, eg the deadwood cavities providing habitats for birds and bats. Squirrels, jays and badgers eat their acorns.",
+          "image": "./images/natureImages/Sessile_Oak.png",
+          "locations": []
+        },
+        {
+          "id":"7",
+          "species": "Ash", 
+          "size": 35, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 400,
+          "nature": "Due to their size, they provide perfect cover for wildflowers which in turn support a wide range of insects including the rare high brown fritillery butterfly.",
+          "image": "./images/natureImages/Ash.png",
+          "locations": []
+        },
+        {
+          "id":"8",
+          "species": "Hazel", 
+          "size": 12, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "nature": "Hazel has long been associated with the dormouse. Not only are hazelnuts eaten by dormice to fatten up for hibernation, but in spring the leaves are a good source of caterpillars, which dormice also eat.",
+          "image": "./images/natureImages/Hazel.png",
+          "locations": []
+        },
+        {
+          "id":"9",
+          "species": "Grey Willow", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 300,
+          "image": "./images/natureImages/Grey_Willow.png",
+          "nature": "Grey willow foliage is eaten by caterpillars of a number of moths, including the sallow kitten, sallow clearwing, dusky clearwing and lunar hornet clearwing. It is also a food plant for the purple emperor butterfly.",
+          "locations": []
+        },
+        {
+          "id":"10",
+          "species": "Goat Willow", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 300,
+          "image": "./images/natureImages/Goat_Willow.png",
+          "nature": "The main food plant for the purple emperor butterfly. Catkins provide an important early source of pollen and nectar for bees and other insects, and birds use goat willow to forage for caterpillars and insects.",
+          "locations": []
+        },
+        {
+          "id":"12",
+          "species": "Aspen", 
+          "size": 25, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Aspen.png",
+          "nature": "Aspen are the preferred species for beavers, and provide nesting opportunities for birds such as the woodpecker.",
+          "locations": []
+        },
+        {
+          "id":"14",
+          "species": "Hawthorn", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Hawthorn.png",
+          "nature": "The haws are eaten by migrating birds, such as redwings, fieldfares, and thrushes. The foliage makes fantastic nesting shelters for many species of birds.",
+          "locations": []
+        },
+        {
+          "id":"15",
+          "species": "Holly", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Holly.png",
+          "nature": "The leaves provide great nesting opportunities for birds and the dry leaf litter can be used for hibernation by hedgehogs and other small mammals. Deer eat the smooth leaves at the top.",
+          "locations": []
+        },
+        {
+          "id":"2",
+          "species": "Juniper", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "nature": "Common juniper provides dense cover for nesting birds, such as the goldcrest and firecrest, and in northern upland areas, the (famous) black grouse.",
+          "image": "./images/natureImages/Juniper.png",
+          "locations": []
+        },
+        {
+          "id":"16",
+          "species": "Elder", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Elder.png",
+          "nature": "Dormice and bank voles eat both the fruit and flowers, berries are eaten by many insects and animals, fruit provides nectar and pollen.",
+          "locations": []
+        },
+        {
+          "id":"17",
+          "species": "Wild Cherry", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Wild_Cherry.png",
+          "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+          "locations": []
+        },
+        {
+          "id":"18",
+          "species": "Bird Cherry", 
+          "size": 25, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Bird_Cherry.png",
+          "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+          "locations": []
+        },
+        {
+          "id":"19",
+          "species": "Crab Apple Tree", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Crab_Apple.png",
+          "nature": "The flowers provide an important source of early pollen and nectar for bees and other insects. The fruit is eaten by birds such as thrushes, blackbirds and crows, and mammals such as mice, voles, foxes, and badgers.",
+          "locations": []
+        },
+        {
+          "id":"20",
+          "species": "Dog Rose", 
+          "size": 3, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Dog_Rose.png",
+          "nature": "Dog rose flowers are an important nectar source for insects and its fruits are a food source for birds such as blackbirds, redwings, and waxwings.",
+          "locations": []
+        }
+      ]
     },
     {
       "id":"4",
-      "name":"Eastern Scotland",
-      "soil":"Humus Iron, Brown Forest Soil",
-      "weather": "Less rainy"
+      "name":"South-East Scotland",
+      "soil":"Brown Forest Soil",
+      "weather": "Less rainy",
+      "trees": [
+        {
+          "id":"4",
+          "species": "Silver Birch", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 100,
+          "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls",
+          "image": "./images/natureImages/Silver_Birch.jpeg",
+          "locations": []
+        },
+        {
+          "id":"5",
+          "species": "Alder", 
+          "size": 28,
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 60,
+          "nature": "The roots make perfect nests for otters and the seeds are eaten by siskin. It also improves soil fertility through its ability to fix nitrogen from the air.",
+          "image": "./images/natureImages/Alder.png",
+          "locations": []
+        },
+        {
+          "id":"7",
+          "species": "Ash", 
+          "size": 35, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 400,
+          "nature": "Due to their size, they provide perfect cover for wildflowers which in turn support a wide range of insects including the rare high brown fritillery butterfly.",
+          "image": "./images/natureImages/Ash.png",
+          "locations": []
+        },
+        {
+          "id":"8",
+          "species": "Hazel", 
+          "size": 12, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "nature": "Hazel has long been associated with the dormouse. Not only are hazelnuts eaten by dormice to fatten up for hibernation, but in spring the leaves are a good source of caterpillars, which dormice also eat.",
+          "image": "./images/natureImages/Hazel.png",
+          "locations": []
+        },
+        {
+          "id":"11",
+          "species": "Rowan", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Rowan.png",
+          "nature": "Flowers provide pollen and nectar for bees and other pollinating insects, while the berries are a rich source of autumn food for birds, especially the blackbird, mistle thrush, redstart, redwing, song thrush, fieldfare, and waxwing.",
+          "locations": []
+        },
+        {
+          "id":"9",
+          "species": "Grey Willow", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 300,
+          "image": "./images/natureImages/Grey_Willow.png",
+          "nature": "Grey willow foliage is eaten by caterpillars of a number of moths, including the sallow kitten, sallow clearwing, dusky clearwing and lunar hornet clearwing. It is also a food plant for the purple emperor butterfly.",
+          "locations": []
+        },
+        {
+          "id":"10",
+          "species": "Goat Willow", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 300,
+          "image": "./images/natureImages/Goat_Willow.png",
+          "nature": "The main food plant for the purple emperor butterfly. Catkins provide an important early source of pollen and nectar for bees and other insects, and birds use goat willow to forage for caterpillars and insects.",
+          "locations": []
+        },
+        {
+          "id":"12",
+          "species": "Aspen", 
+          "size": 25, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Aspen.png",
+          "nature": "Aspen are the preferred species for beavers, and provide nesting opportunities for birds such as the woodpecker.",
+          "locations": []
+        },
+        {
+          "id":"13",
+          "species": "Wych Elm", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Wych_Elm.png",
+          "nature": "Many birds eat the seeds and leaves provide food for caterpillars of many moths, and the caterpillar of the white-letter hairstreak butterfly",
+          "locations": []
+        },
+        {
+          "id":"14",
+          "species": "Hawthorn", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Hawthorn.png",
+          "nature": "The haws are eaten by migrating birds, such as redwings, fieldfares, and thrushes. The foliage makes fantastic nesting shelters for many species of birds.",
+          "locations": []
+        },
+        {
+          "id":"15",
+          "species": "Holly", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Holly.png",
+          "nature": "The leaves provide great nesting opportunities for birds and the dry leaf litter can be used for hibernation by hedgehogs and other small mammals. Deer eat the smooth leaves at the top.",
+          "locations": []
+        },
+        {
+          "id":"2",
+          "species": "Juniper", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "nature": "Common juniper provides dense cover for nesting birds, such as the goldcrest and firecrest, and in northern upland areas, the (famous) black grouse.",
+          "image": "./images/natureImages/Juniper.png",
+          "locations": []
+        },
+        {
+          "id":"16",
+          "species": "Elder", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Elder.png",
+          "nature": "Dormice and bank voles eat both the fruit and flowers, berries are eaten by many insects and animals, fruit provides nectar and pollen.",
+          "locations": []
+        },
+        {
+          "id":"17",
+          "species": "Wild Cherry", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Wild_Cherry.png",
+          "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+          "locations": []
+        },
+        {
+          "id":"18",
+          "species": "Bird Cherry", 
+          "size": 25, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Bird_Cherry.png",
+          "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+          "locations": []
+        },
+        {
+          "id":"19",
+          "species": "Crab Apple Tree", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Crab_Apple.png",
+          "nature": "The flowers provide an important source of early pollen and nectar for bees and other insects. The fruit is eaten by birds such as thrushes, blackbirds and crows, and mammals such as mice, voles, foxes, and badgers.",
+          "locations": []
+        },
+        {
+          "id":"20",
+          "species": "Dog Rose", 
+          "size": 3, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Dog_Rose.png",
+          "nature": "Dog rose flowers are an important nectar source for insects and its fruits are a food source for birds such as blackbirds, redwings, and waxwings.",
+          "locations": []
+        }
+      ]
     },
     {
       "id":"5",
       "name":"Highlands",
-      "soil":"Peaty",
-      "weather": "Very rainy and windy"
+      "soil":"Peaty Gleys",
+      "weather": "Very rainy and windy",
+      "trees": [
+        {
+          "id":"1",
+          "species": "Scots Pine", 
+          "size": 35,
+          "soil":{
+            "Brown Forest Soil": false,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 700,
+          "nature": "The perfect home for iconic Scottish wildlife, such as the red squirrel, capercaillie, Scottish crossbill, and the Scottish wildcat.",
+          "image": "./images/natureImages/Scots_Pine.png",
+          "locations": []
+        },
+        {
+          "id":"3",
+          "species": "Downy Birch", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": true,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 90,
+          "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls.",
+          "image": "./images/natureImages/Downy_Birch.png",
+          "locations": []
+        },
+        {
+          "id":"5",
+          "species": "Alder", 
+          "size": 28,
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 60,
+          "nature": "The roots make perfect nests for otters and the seeds are eaten by siskin. It also improves soil fertility through its ability to fix nitrogen from the air.",
+          "image": "./images/natureImages/Alder.png",
+          "locations": []
+        },
+        {
+          "id":"8",
+          "species": "Hazel", 
+          "size": 12, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "nature": "Hazel has long been associated with the dormouse. Not only are hazelnuts eaten by dormice to fatten up for hibernation, but in spring the leaves are a good source of caterpillars, which dormice also eat.",
+          "image": "./images/natureImages/Hazel.png",
+          "locations": []
+        },
+        {
+          "id":"11",
+          "species": "Rowan", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Rowan.png",
+          "nature": "Flowers provide pollen and nectar for bees and other pollinating insects, while the berries are a rich source of autumn food for birds, especially the blackbird, mistle thrush, redstart, redwing, song thrush, fieldfare, and waxwing.",
+          "locations": []
+        },
+        {
+          "id":"13",
+          "species": "Wych Elm", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Wych_Elm.png",
+          "nature": "Many birds eat the seeds and leaves provide food for caterpillars of many moths, and the caterpillar of the white-letter hairstreak butterfly",
+          "locations": []
+        },
+        {
+          "id":"2",
+          "species": "Juniper", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "nature": "Common juniper provides dense cover for nesting birds, such as the goldcrest and firecrest, and in northern upland areas, the (famous) black grouse.",
+          "image": "./images/natureImages/Juniper.png",
+          "locations": []
+        },
+        {
+          "id":"17",
+          "species": "Wild Cherry", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Wild_Cherry.png",
+          "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+          "locations": []
+        }
+      ]
     },
     {
       "id":"6",
-      "name":"Glasgow",
-      "soil":"Brown Forest Soil",
-      "weather": "Rainy"
+      "name":"Shetland Isles",
+      "soil":"Blanket Peats",
+      "weather": "Rainy",
+      "trees": [
+        {
+          "id":"3",
+          "species": "Downy Birch", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": true,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 90,
+          "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls.",
+          "image": "./images/natureImages/Downy_Birch.png",
+          "locations": []
+        }
+      ]
     },
     {
       "id":"7",
-      "name":"Edinburgh",
+      "name":"Orkney Isles",
       "soil":"Brown Forest Soil",
-      "weather": "Less rainy"
+      "weather": "Less rainy",
+      "trees": [
+        {
+          "id":"3",
+          "species": "Downy Birch", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": true,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 90,
+          "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls.",
+          "image": "./images/natureImages/Downy_Birch.png",
+          "locations": []
+        },
+        {
+          "id":"8",
+          "species": "Hazel", 
+          "size": 12, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "nature": "Hazel has long been associated with the dormouse. Not only are hazelnuts eaten by dormice to fatten up for hibernation, but in spring the leaves are a good source of caterpillars, which dormice also eat.",
+          "image": "./images/natureImages/Hazel.png",
+          "locations": []
+        },
+        {
+          "id":"11",
+          "species": "Rowan", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Rowan.png",
+          "nature": "Flowers provide pollen and nectar for bees and other pollinating insects, while the berries are a rich source of autumn food for birds, especially the blackbird, mistle thrush, redstart, redwing, song thrush, fieldfare, and waxwing.",
+          "locations": []
+        },
+        {
+          "id":"12",
+          "species": "Aspen", 
+          "size": 25, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Aspen.png",
+          "nature": "Aspen are the preferred species for beavers, and provide nesting opportunities for birds such as the woodpecker.",
+          "locations": []
+        },
+        {
+          "id":"2",
+          "species": "Juniper", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "nature": "Common juniper provides dense cover for nesting birds, such as the goldcrest and firecrest, and in northern upland areas, the (famous) black grouse.",
+          "image": "./images/natureImages/Juniper.png",
+          "locations": []
+        },
+        {
+          "id":"9",
+          "species": "Grey Willow", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": false
+          },
+          "age": 300,
+          "image": "./images/natureImages/Grey_Willow.png",
+          "nature": "Grey willow foliage is eaten by caterpillars of a number of moths, including the sallow kitten, sallow clearwing, dusky clearwing and lunar hornet clearwing. It is also a food plant for the purple emperor butterfly.",
+          "locations": []
+        },
+        {
+          "id":"10",
+          "species": "Goat Willow", 
+          "size": 10, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": false,
+            "Peaty Gleys": true
+          },
+          "age": 300,
+          "image": "./images/natureImages/Goat_Willow.png",
+          "nature": "The main food plant for the purple emperor butterfly. Catkins provide an important early source of pollen and nectar for bees and other insects, and birds use goat willow to forage for caterpillars and insects.",
+          "locations": []
+        }
+      ]
+    },
+    {
+      "id":"8",
+      "name":"North-East Scotland",
+      "soil":"Humus Iron",
+      "weather": "Less rainy",
+      "trees": [
+        {
+          "id":"3",
+          "species": "Downy Birch", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": true,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 90,
+          "nature": "Provides food and habitat for over 300 different types of insects. The seeds are food for siskins, greenfinches, and redpolls.",
+          "image": "./images/natureImages/Downy_Birch.png",
+          "locations": []
+        },
+        {
+          "id":"5",
+          "species": "Alder", 
+          "size": 28,
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 60,
+          "nature": "The roots make perfect nests for otters and the seeds are eaten by siskin. It also improves soil fertility through its ability to fix nitrogen from the air.",
+          "image": "./images/natureImages/Alder.png",
+          "locations": []
+        },
+        {
+          "id":"11",
+          "species": "Rowan", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Rowan.png",
+          "nature": "Flowers provide pollen and nectar for bees and other pollinating insects, while the berries are a rich source of autumn food for birds, especially the blackbird, mistle thrush, redstart, redwing, song thrush, fieldfare, and waxwing.",
+          "locations": []
+        },
+        {
+          "id":"12",
+          "species": "Aspen", 
+          "size": 25, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Aspen.png",
+          "nature": "Aspen are the preferred species for beavers, and provide nesting opportunities for birds such as the woodpecker.",
+          "locations": []
+        },
+        {
+          "id":"15",
+          "species": "Holly", 
+          "size": 15, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": false
+          },
+          "age": 200,
+          "image": "./images/natureImages/Holly.png",
+          "nature": "The leaves provide great nesting opportunities for birds and the dry leaf litter can be used for hibernation by hedgehogs and other small mammals. Deer eat the smooth leaves at the top.",
+          "locations": []
+        },
+        {
+          "id":"17",
+          "species": "Wild Cherry", 
+          "size": 30, 
+          "soil":{
+            "Brown Forest Soil": true,
+            "Blanket Peats": false,
+            "Humus Iron": true,
+            "Peaty Gleys": true
+          },
+          "age": 200,
+          "image": "./images/natureImages/Wild_Cherry.png",
+          "nature": "Provides nectar and pollen for bees. Cherries are eaten by birds such as blackbirds and song thrush, and mammals such as badger, wood mouse, yellow-necked mouse, and dormouse.",
+          "locations": []
+        }
+      ]
     }
   ]
 }
