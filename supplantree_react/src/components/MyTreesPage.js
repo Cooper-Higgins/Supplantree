@@ -10,6 +10,7 @@ const MyTrees = ({ users, handleDelete }) => {
   const usersTrees = users[0]["trees"].map((tree, index) => {
     const onDelete = () => {
       handleDelete(tree.id)
+    }
 
     const item = {
       hidden: {opacity: 0},
@@ -27,8 +28,8 @@ const MyTrees = ({ users, handleDelete }) => {
         <br/>
         <button onClick={onDelete}>Delete {tree.species}</button>
       </motion.div>
-    );
-  });
+    )
+  })
 
   const container = {
     hidden: { opacity: 0 },
