@@ -31,4 +31,17 @@ public class LocationController {
         locationRepository.save(location);
         return new ResponseEntity<>(location, HttpStatus.CREATED);
     }
+
+    @PatchMapping(value="/locations/{id}")
+    public ResponseEntity<Location> updateLocation(@RequestBody Location location){
+        locationRepository.save(location);
+        return new ResponseEntity<>(location, HttpStatus.OK);
+    }
+
+    @DeleteMapping(value="/locations/{id}")
+    public ResponseEntity<Location> deleteLocation(@PathVariable Long id){
+        Location found = locationRepository.getOne(id);
+        locationRepository.delete(found);
+        return new ResponseEntity<>(null, HttpStatus.OK);
+    }
 }
