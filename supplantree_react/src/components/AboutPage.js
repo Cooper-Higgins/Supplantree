@@ -5,14 +5,14 @@ const About = () => {
     <main className="bg-green-400 flex flex-col md:flex-row">
       <div className="flex flex-col m-4 rounded-3xl">
         <div className="flex justify-center">
-          <h1 className="text-6xl p-10">About Us</h1>
+          <h1 className="text-4xl md:text-6xl p-6 md:p-10">About Us</h1>
         </div>
-        <h1 className="text-3xl p-10 text-center">
+        <h1 className="text-xl md:text-3xl p-6 md:p-10 text-center">
           Learn more about our development team!
         </h1>
       </div>
-      <div className="flex flex-col m-6 gap-6 flex-wrap">
-        <div className="flex flex-col md:flex-row bg-pink-200 border-8 border-white rounded-3xl shadow-xl">
+      <div className="flex flex-col m-6 gap-8 flex-wrap">
+        <div className="flex flex-col md:flex-row bg-pink-200 border-8 border-white rounded-3xl shadow-lg shadow-gray-600">
           <img
             className="w-10/12 place-self-center md:w-5/12 m-2 p-4 rounded-full"
             src="./images/first_image.jpg"
@@ -29,7 +29,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 border-8 border-white rounded-3xl shadow-xl">
+        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 border-8 border-white rounded-3xl shadow-lg shadow-gray-600">
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-full"
             src="./images/second_image.jpg"
@@ -44,7 +44,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row bg-pink-200 border-8 border-white rounded-3xl shadow-2xl">
+        <div className="flex flex-col md:flex-row bg-pink-200 border-8 border-white rounded-3xl shadow-lg shadow-gray-600">
           <img
             className="w-10/12 place-self-center md:w-5/12 m-2 p-4 rounded-full"
             src="./images/first_image.jpg"
@@ -59,7 +59,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 border-8 border-white rounded-3xl shadow-2xl">
+        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 border-8 border-white rounded-3xl shadow-lg shadow-gray-600">
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-full"
             src="./images/second_image.jpg"

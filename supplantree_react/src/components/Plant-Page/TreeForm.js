@@ -55,7 +55,7 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers}) => {
   };
   return (
     <div className="flex flex-col">
-      <h1 className="text-6xl p-6">Find Your Tree</h1>
+      <h1 className="text-4xl md:text-6xl p-6">Find Your Tree</h1>
       <form
         className="flex flex-col gap-4 place-self-center w-1/2 mt-10"
         onSubmit={handleSubmit}
