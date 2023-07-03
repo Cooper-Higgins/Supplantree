@@ -66,7 +66,7 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers }) => {
       >
         Find Your Tree
       </motion.h1>
-      <motion.form
+      <form
         className="flex flex-col gap-4 place-self-center w-1/2 mt-10"
         onSubmit={handleSubmit}
       >
@@ -99,8 +99,7 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers }) => {
         <br />
         <br />
         <motion.button
-          className="bg-slate-300 border-4 m-4 w-36 p-2 rounded-lg place-self-center shadow-lg shadow-gray-600
-                     hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110"
+          className="bg-slate-300 border-4 m-4 w-36 p-2 rounded-lg place-self-center shadow-lg shadow-gray-600 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 active:scale-90"
           initial={{ y: "-100vh" }}
           animate={{ y: 0 }}
           transition={{ delay: 2, duration: 1 }}
@@ -108,7 +107,7 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers }) => {
         >
           Submit
         </motion.button>
-      </motion.form>
+      </form>
       {trees.length > 0 && (
         <ResultCarousel
           foundTrees={trees}
