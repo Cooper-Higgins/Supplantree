@@ -1,23 +1,44 @@
 import React from "react";
 import Request from "../helpers/request";
 import { useEffect, useState } from "react";
+import {motion} from "framer-motion"
 
 const MyTrees = ({ users }) => {
   const usersTrees = users[0]["trees"].map((tree, index) => {
+
+    const item = {
+      hidden: {opacity: 0},
+      show: {opacity: 1}
+    }
+
     return (
-      <div className="bg-pink-200 border-4 border-white basis-1/4 text-center rounded-xl shadow-xl shadow-gray-600 p-4 gap-6">
+      <motion.div variants={item} className="bg-pink-200 border-4 border-white basis-1/4 text-center rounded-xl shadow-xl shadow-gray-600 p-4 gap-6">
         <p>{tree.species}</p>
-        <p>{tree.nature}</p>
-      </div>
+        <img
+              className="w-10/12 place-self-center md:w-8/12 m-2 p-1 rounded-3xl"
+              src={tree.image}
+              alt="placeholder"
+            ></img>
+      </motion.div>
     );
   });
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5
+      }
+    }
+  }
 
   return (
     <div className="bg-green-400 min-h-screen">
       <h1 className="text-4xl md:text-6xl p-4">Your Digital Forest</h1>
-      <div className="flex flex-col md:flex-row flex-wrap gap-10 justify-evenly p-8">
+      <motion.div className="flex flex-col md:flex-row flex-wrap gap-10 justify-evenly p-8" variants={container} initial="hidden" animate="show">
         {usersTrees}
-      </div>
+      </motion.div>
     </div>
   );
 };
