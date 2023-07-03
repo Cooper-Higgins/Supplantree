@@ -32,4 +32,17 @@ public class TreeController {
         treeRepository.save(tree);
         return new ResponseEntity<>(tree, HttpStatus.CREATED);
     }
+
+    @PatchMapping(value="/trees/{id}")
+    public ResponseEntity<Tree> updateTree(@RequestBody Tree tree){
+        treeRepository.save(tree);
+        return new ResponseEntity<>(tree, HttpStatus.OK);
+    }
+
+    @DeleteMapping(value="/trees/{id}")
+    public ResponseEntity<Tree> deleteTree(@PathVariable Long id){
+        Tree found = treeRepository.getOne(id);
+        treeRepository.delete(found);
+        return new ResponseEntity<>(null, HttpStatus.OK);
+    }
 }
