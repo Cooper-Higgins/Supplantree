@@ -20,12 +20,13 @@ const About = () => {
           ></img>
           <div className="flex flex-col justify-center text-center gap-5 md:gap-10 m-6 text-green-950">
             <h1 className="text-4xl md:text-5xl font-bold">
-              Jamie Cooper-Higgins
+              Richard Dalrymple
             </h1>
             <p className="text-lg md:text-xl font-light">
-              Understand Scotland's soils and which tree would best suit your
-              land soils and which tree would best suit your landUnderstand
-              Scotland's soils and which tree would bestsoils and which tree
+              Richard comes to Supplantree from an artistic background, with an
+              Honours Degree in Contemporary Art Practice under his belt. If you
+              are seeing or interacting with it, the odds are he had a hand in
+              it!
             </p>
           </div>
         </div>
@@ -38,9 +39,9 @@ const About = () => {
           <div className="flex flex-col justify-center text-center gap-5 md:gap-10 m-8 text-green-950">
             <h1 className="text-4xl md:text-5xl font-bold">Zoe Eustace</h1>
             <p className="text-lg md:text-xl">
-              Choose your tree species based on our recommendations soils and
-              which tree would best suit your landUnderstand Scotland's soils
-              and which tree would best soils and which tree would best suit
+              With a background in business decarbonisation, Zoe leverages
+              climate model knowledge with her back-end skills, to build out
+              the business logic for Supplantree.
             </p>
           </div>
         </div>
@@ -53,9 +54,9 @@ const About = () => {
           <div className="flex flex-col justify-center text-center gap-5 md:gap-10 m-8 text-green-950">
             <h1 className="text-4xl md:text-5xl font-bold">Neil Hutton</h1>
             <p className="text-lg md:text-xl font-extralight">
-              Understand Scotland's soils and which tree would best suit your
-              land soils and which tree would best suit your landUnderstand
-              Scotland's soils and which tree would bestsoils and which tree
+              Neil's affinity for back-end engineering powers the 
+              data flow through Supplantree - there's magic going on 
+              behind the scenes, and Neil's conducting.
             </p>
           </div>
         </div>
@@ -67,13 +68,12 @@ const About = () => {
           ></img>
           <div className="flex flex-col justify-center gap-5 md:gap-10 m-8 text-green-950">
             <h1 className="text-4xl md:text-5xl font-bold">
-              Richard Dalrymple
+              Jamie Cooper-Higgins
             </h1>
             <p className="text-lg md:text-xl">
-              Richard comes to Supplantree from an artistic background, with an
-              Honours Degree in Contemporary Art Practice under his belt. If you
-              are seeing or interacting with it, the odds are he had a hand in
-              it!
+              With a product management background, Jamie brings a
+              customer-first perspective to Supplantree, and helps 
+              bring the vision to life.
             </p>
           </div>
         </div>
