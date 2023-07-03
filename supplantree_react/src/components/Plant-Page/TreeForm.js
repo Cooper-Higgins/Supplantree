@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Request from "../../helpers/request";
 import Login from "../Login/LoginPage";
 import ResultCarousel from "../Plant-Page/ResultCarousel";
-const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers}) => {
+import { motion } from "framer-motion";
+
+const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers }) => {
   const pause = useNavigate();
   const [trees, setTrees] = useState([]);
   const [soils, setSoils] = useState(null);
@@ -32,7 +34,7 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers}) => {
     const areaSoil = areaOptions[index].props.soil;
     setArea(selectedArea);
     setSoils(areaSoil);
-  }
+  };
   console.log(soils);
   const handleSoilChange = (event) => {
     // console.log(event.target.value);
@@ -53,15 +55,26 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers}) => {
     setTrees(foundTrees);
     console.log(trees);
   };
+
   return (
     <div className="flex flex-col">
-      <h1 className="text-4xl md:text-6xl p-6">Find Your Tree</h1>
-      <form
+      <motion.h1
+        className="text-4xl md:text-6xl p-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.0 }}
+      >
+        Find Your Tree
+      </motion.h1>
+      <motion.form
         className="flex flex-col gap-4 place-self-center w-1/2 mt-10"
         onSubmit={handleSubmit}
       >
-        <select
+        <motion.select
           className="bg-pink-200 border-4 rounded-lg"
+          initial={{ y: "-100vh" }}
+          animate={{ y: 0 }}
+          transition={{ delay: 1.0, duration: 1 }}
           defaultValue={"select-area"}
           onChange={handleAreaChange}
         >
@@ -69,9 +82,12 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers}) => {
             Select an area
           </option>
           {areaOptions}
-        </select>
-        <select
+        </motion.select>
+        <motion.select
           className="bg-pink-200 border-4 rounded-lg"
+          initial={{ y: "-100vh" }}
+          animate={{ y: 0 }}
+          transition={{ delay: 1.5, duration: 1 }}
           defaultValue={"select-soil"}
           onChange={handleSoilChange}
         >
@@ -79,16 +95,20 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers}) => {
             Select a soil
           </option>
           {soilOptions}
-        </select>
+        </motion.select>
         <br />
         <br />
-        <button
-          className="bg-pink-200 border-4 rounded-lg place-self-center w-1/4"
+        <motion.button
+          className="bg-slate-300 border-4 m-4 w-36 p-2 rounded-lg place-self-center shadow-lg shadow-gray-600
+                     hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110"
+          initial={{ y: "-100vh" }}
+          animate={{ y: 0 }}
+          transition={{ delay: 2, duration: 1 }}
           type="submit"
         >
           Submit
-        </button>
-      </form>
+        </motion.button>
+      </motion.form>
       {trees.length > 0 && (
         <ResultCarousel
           foundTrees={trees}
