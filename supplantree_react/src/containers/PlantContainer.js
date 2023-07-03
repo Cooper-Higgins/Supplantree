@@ -4,8 +4,8 @@ import { useParams, Route, Routes } from "react-router-dom";
 import User from "../components/User";
 import TreeForm from "../components/Plant-Page/TreeForm";
 import data from "../data.json";
-const PlantContainer = ({ users, setUsers, getUsers }) => {
-  const [trees, setTrees] = useState(data.trees);
+const PlantContainer = ({ users, setUsers, getUsers, trees, setTrees }) => {
+  // const [trees, setTrees] = useState(data.trees);
 
   const UserWrapper = ({ users, addTreeToUser }) => {
     console.log("wrapper triggers");
@@ -64,6 +64,8 @@ const PlantContainer = ({ users, setUsers, getUsers }) => {
         console.error(error);
       });
   };
+
+  
 
   return (
     <div className="bg-green-400 min-h-screen">

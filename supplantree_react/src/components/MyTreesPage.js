@@ -2,15 +2,26 @@ import React from "react";
 import Request from "../helpers/request";
 import { useEffect, useState } from "react";
 
-const MyTrees = ({ users }) => {
+const MyTrees = ({ users, handleDelete }) => {
+
+  
+
   const usersTrees = users[0]["trees"].map((tree, index) => {
+    const onDelete = () => {
+      handleDelete(tree.id)
+    }
+
     return (
       <div className="bg-pink-200 border-4 border-white basis-1/4 text-center rounded-xl shadow-xl shadow-gray-600 p-4 gap-6">
         <p>{tree.species}</p>
         <p>{tree.nature}</p>
+        <br/>
+        <button onClick={onDelete}>Delete {tree.species}</button>
       </div>
     );
   });
+
+  
 
   return (
     <div className="bg-green-400 min-h-screen">
