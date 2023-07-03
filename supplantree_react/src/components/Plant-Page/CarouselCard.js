@@ -1,5 +1,6 @@
 import React from "react";
 import TreeCard from "./TreeCard";
+import { motion } from "framer-motion";
 
 const CarouselCard = ({
   tree,
@@ -18,7 +19,12 @@ const CarouselCard = ({
   return (
     <div className="flex justify-center">
       <div className="flex flex-col justify-center bg-pink-200 rounded-3xl border-8 border-white m-10 w-3/4 md:w-1/2 shadow-lg shadow-gray-600">
-        <form onSubmit={handleSubmit}>
+        <motion.form
+          onSubmit={handleSubmit}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+        >
           <br />
           <div className="flex flex-col justify-center p-2 gap-4">
             <p className="place-self-center text-3xl">{tree.species}</p>
@@ -33,13 +39,13 @@ const CarouselCard = ({
             </div>
             <p className="place-self-center text-center">{tree.nature}</p>
             <button
-              className="place-self-center border-4 border-white bg-slate-300 p-2 rounded-xl shadow-lg shadow-gray-600 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110"
+              className="place-self-center border-4 border-white bg-slate-300 p-2 rounded-xl shadow-lg shadow-gray-600 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 active:scale-90"
               type="submit"
             >
               I've planted this!
             </button>
           </div>
-        </form>
+        </motion.form>
       </div>
     </div>
   );

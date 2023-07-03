@@ -38,12 +38,12 @@ const LandingPage = () => {
             transition={{ duration: 1, delay: 2.0 }}
           >
             <a href="http://localhost:3000/plant">
-              <button className="bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
+              <button className="bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 active:scale-90 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
                 Get Planting!
               </button>
             </a>
             <a href="http://localhost:3000/learn">
-              <button className="bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
+              <button className="bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 active:scale-90 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
                 Learn More
               </button>
             </a>
@@ -133,12 +133,12 @@ const LandingPage = () => {
         transition={{ duration: 0.5, delay: 7 }}
       >
         <a href="http://localhost:3000/plant">
-          <button className="ml-10 bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
+          <button className="ml-10 bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 active:scale-90 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
             Plant
           </button>
         </a>
         <a href="http://localhost:3000/learn">
-          <button className="mr-10 bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
+          <button className="mr-10 bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 active:scale-90 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
             Learn
           </button>
         </a>
