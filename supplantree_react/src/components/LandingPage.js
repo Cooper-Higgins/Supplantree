@@ -1,24 +1,42 @@
 import React from "react";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 const LandingPage = () => {
   return (
     <main className="min-h-screen bg-green-400">
       <div className="flex justify-evenly gap-8 md:gap-4 flex-col-reverse md:flex-row pt-8">
         <div className="flex flex-col gap-8 md:gap-12 justify-center text-center md:w-5/12">
-          <motion.h1 className="text-4xl font-bold sm:text-5xl md:text-6xl m-4"
-            initial={{ opacity: 0}} animate={{ opacity: 1 }} transition={{ delay: 0.5}}>
-
+          <motion.h1
+            className="text-4xl font-bold sm:text-5xl md:text-6xl m-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
             Learn the Soil, Make a Change that Matters
           </motion.h1>
-          <motion.p className="text-lg sm:text-xl md:text-2xl m-4 font-thin" initial={{ opacity: 0}} animate={{ opacity: 1 }} transition={{ delay: 1.0}}>
+          <motion.p
+            className="text-lg sm:text-xl md:text-2xl m-4 font-thin"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.0 }}
+          >
             Unsure where to begin with your tree-planting journey?
           </motion.p>
-          <motion.p className="text-lg sm:text-xl md:text-2xl m-4 font-thin" initial={{ opacity: 0}} animate={{ opacity: 1 }} transition={{ delay: 1.5}}>
+          <motion.p
+            className="text-lg sm:text-xl md:text-2xl m-4 font-thin"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5 }}
+          >
             Here you can learn more about Scotland's soils to choose the species
             that fits best, all while documenting your growing efforts
           </motion.p>
-          <motion.div className="flex justify-evenly mb-20" initial={{ x: "-100vw"}} animate={{ x: 0 }} transition={{ duration: 1, delay: 2.0 }}>
+          <motion.div
+            className="flex justify-evenly mb-20"
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1, delay: 2.0 }}
+          >
             <a href="http://localhost:3000/plant">
               <button className="bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
                 Get Planting!
@@ -38,7 +56,12 @@ const LandingPage = () => {
         ></img>
       </div>
       <div className="flex flex-col flex-wrap m-4 gap-8">
-        <div className="flex flex-col md:flex-row bg-pink-200 rounded-3xl border-8 border-white shadow-lg shadow-gray-600">
+        <motion.div
+          className="flex flex-col md:flex-row bg-pink-200 rounded-3xl border-8 border-white shadow-lg shadow-gray-600"
+          initial={{ x: "100vw" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.5, delay: 3 }}
+        >
           <img
             className="w-10/12 place-self-center md:w-5/12 m-2 p-4 rounded-3xl"
             src="./images/first_image.jpg"
@@ -51,8 +74,13 @@ const LandingPage = () => {
               what and how you should be planting
             </p>
           </div>
-        </div>
-        <div className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 rounded-3xl border-8 border-white shadow-lg shadow-gray-600">
+        </motion.div>
+        <motion.div
+          className="flex flex-col md:flex-row-reverse justify-evenly bg-slate-300 rounded-3xl border-8 border-white shadow-lg shadow-gray-600"
+          initial={{ x: "100vw" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.5, delay: 4 }}
+        >
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-3xl"
             src="./images/second_image.jpg"
@@ -65,8 +93,13 @@ const LandingPage = () => {
               tree based on our recommendations
             </p>
           </div>
-        </div>
-        <div className="flex flex-col md:flex-row justify-evenly bg-pink-200 rounded-3xl border-8 border-white shadow-lg shadow-gray-600">
+        </motion.div>
+        <motion.div
+          className="flex flex-col md:flex-row justify-evenly bg-pink-200 rounded-3xl border-8 border-white shadow-lg shadow-gray-600"
+          initial={{ x: "100vw" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.5, delay: 5 }}
+        >
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-3xl"
             src="./images/third_image.jpg"
@@ -81,14 +114,24 @@ const LandingPage = () => {
               digital forest grow
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="flex justify-center my-10">
-        <h1 className="text-3xl md:text-4xl text-green-950">
+        <motion.h1
+          className="text-3xl md:text-4xl text-green-950"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 6 }}
+        >
           Ready to get started?
-        </h1>
+        </motion.h1>
       </div>
-      <div className="flex justify-center pb-10">
+      <motion.div
+        className="flex justify-center pb-10"
+        initial={{ x: "-100vw" }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.5, delay: 7 }}
+      >
         <a href="http://localhost:3000/plant">
           <button className="ml-10 bg-slate-300 border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600">
             Plant
@@ -99,7 +142,7 @@ const LandingPage = () => {
             Learn
           </button>
         </a>
-      </div>
+      </motion.div>
     </main>
   );
 };

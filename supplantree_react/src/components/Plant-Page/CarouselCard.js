@@ -17,7 +17,7 @@ const CarouselCard = ({
 
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col justify-center bg-pink-200 rounded-3xl border-8 border-white m-10 w-1/2 shadow-lg shadow-gray-600">
+      <div className="flex flex-col justify-center bg-pink-200 rounded-3xl border-8 border-white m-10 w-3/4 md:w-1/2 shadow-lg shadow-gray-600">
         <form onSubmit={handleSubmit}>
           <br />
           <div className="flex flex-col justify-center p-2 gap-4">
