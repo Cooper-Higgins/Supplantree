@@ -100,10 +100,10 @@ const About = () => {
             alt="placeholder"
           ></img>
           <div className="flex flex-col justify-center gap-5 md:gap-10 m-8 text-green-950">
-            <h1 className="text-4xl md:text-5xl font-bold">
+            <h1 className="text-4xl md:text-5xl font-bold text-center">
               Jamie Cooper-Higgins
             </h1>
-            <p className="text-lg md:text-xl">
+            <p className="text-lg md:text-xl text-center">
               With a product management background, Jamie brings a
               customer-first perspective to Supplantree, and helps bring the
               vision to life.
