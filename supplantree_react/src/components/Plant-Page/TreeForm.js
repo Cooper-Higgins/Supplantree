@@ -62,19 +62,19 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers }) => {
         className="text-4xl md:text-6xl p-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.0 }}
+        transition={{ delay: 1 }}
       >
         Find Your Tree
       </motion.h1>
-      <form
+      <motion.form
         className="flex flex-col gap-4 place-self-center w-1/2 mt-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
         onSubmit={handleSubmit}
       >
-        <motion.select
+        <select
           className="bg-pink-200 border-4 rounded-lg"
-          initial={{ y: "-100vh" }}
-          animate={{ y: 0 }}
-          transition={{ delay: 1.0, duration: 1 }}
           defaultValue={"select-area"}
           onChange={handleAreaChange}
         >
@@ -82,12 +82,9 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers }) => {
             Select an area
           </option>
           {areaOptions}
-        </motion.select>
-        <motion.select
+        </select>
+        <select
           className="bg-pink-200 border-4 rounded-lg"
-          initial={{ y: "-100vh" }}
-          animate={{ y: 0 }}
-          transition={{ delay: 1.5, duration: 1 }}
           defaultValue={"select-soil"}
           onChange={handleSoilChange}
         >
@@ -95,19 +92,16 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers }) => {
             Select a soil
           </option>
           {soilOptions}
-        </motion.select>
+        </select>
         <br />
         <br />
-        <motion.button
+        <button
           className="bg-slate-300 border-4 m-4 w-36 p-2 rounded-lg place-self-center shadow-lg shadow-gray-600 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 active:scale-90"
-          initial={{ y: "-100vh" }}
-          animate={{ y: 0 }}
-          transition={{ delay: 2, duration: 1 }}
           type="submit"
         >
           Submit
-        </motion.button>
-      </form>
+        </button>
+      </motion.form>
       {trees.length > 0 && (
         <ResultCarousel
           foundTrees={trees}
