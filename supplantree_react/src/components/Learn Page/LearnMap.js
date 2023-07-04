@@ -65,7 +65,7 @@ const LearnMap = () => {
     return ( 
         <div>
             <div className='flex flex-col md:flex-row justify-evenly p-8'>
-                <div className="flex flex-col justify-center gap-48">
+                <div className="flex flex-col justify-center gap-4">
                     <motion.h3 className="text-6xl mb-24" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>Learn more about Scotland's soils</motion.h3>
                     <motion.div className="faq-style-wrapper" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}>
                     <Faq
