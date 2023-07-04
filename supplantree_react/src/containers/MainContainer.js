@@ -64,7 +64,8 @@ import LocationContainer from "./LocationContainer";
 
       const handleDelete = (id) => {
         const request = new Request()
-        const url = '/api/trees' + id;
+        const url = '/api/trees/' + id;
+        console.log(id);
         request.delete(url)
         .then(() => {
           window.location = '/my-trees'
@@ -88,6 +89,7 @@ import LocationContainer from "./LocationContainer";
       //   return 
       // }
 
+      console.log(users);
         return ( 
             <Router>
             <NavBar/>
