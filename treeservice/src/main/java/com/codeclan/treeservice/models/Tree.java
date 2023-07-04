@@ -30,6 +30,9 @@ public class Tree implements Serializable {
     @Column (name = "size")
     private int size;
 
+    @Column(name = "image")
+    private String image;
+
     @ManyToMany
     @JsonIgnoreProperties({"trees"})
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
@@ -68,13 +71,14 @@ public class Tree implements Serializable {
     )
     private List<User> users;
 
-    public Tree(String species, int size, HashMap soil, String nature){
+    public Tree(String species, int size, HashMap soil, String nature, String image){
         this.species = species;
         this.size = size;
         this.soil = new HashMap<>();
         this.nature = nature;
         this.locations = new ArrayList<>();
         this.users = new ArrayList<>();
+        this.image = image;
     }
 
     public Tree(){
@@ -122,7 +126,13 @@ public class Tree implements Serializable {
         this.size = size;
     }
 
+    public String getImage() {
+        return image;
+    }
 
+    public void setImage(String image) {
+        this.image = image;
+    }
 
     public void addLocation(Location location) {
         this.locations.add(location);
