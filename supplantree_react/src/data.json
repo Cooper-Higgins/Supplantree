@@ -1,7 +1,6 @@
 {
   "trees": [
     {
-      "id":"1",
       "species": "Scots Pine", 
       "size": 35,
       "soil":{
@@ -16,7 +15,6 @@
       "locations": []
     },
     {
-      "id":"2",
       "species": "Juniper", 
       "size": 10, 
       "soil":{
@@ -31,7 +29,6 @@
       "locations": []
     },
     {
-      "id":"3",
       "species": "Downy Birch", 
       "size": 30, 
       "soil":{
@@ -46,7 +43,6 @@
       "locations": []
     },
     {
-      "id":"4",
       "species": "Silver Birch", 
       "size": 30, 
       "soil":{
@@ -61,7 +57,6 @@
       "locations": []
     },
     {
-      "id":"5",
       "species": "Alder", 
       "size": 28,
       "soil":{
@@ -76,7 +71,6 @@
       "locations": []
     },
     {
-      "id":"6",
       "species": "Sessile Oak", 
       "size": 40, 
       "soil":{
@@ -91,7 +85,6 @@
       "locations": []
     },
     {
-      "id":"7",
       "species": "Ash", 
       "size": 35, 
       "soil":{
@@ -106,7 +99,6 @@
       "locations": []
     },
     {
-      "id":"8",
       "species": "Hazel", 
       "size": 12, 
       "soil":{
@@ -121,7 +113,6 @@
       "locations": []
     },
     {
-      "id":"9",
       "species": "Grey Willow", 
       "size": 10, 
       "soil":{
@@ -136,7 +127,6 @@
       "locations": []
     },
     {
-      "id":"10",
       "species": "Goat Willow", 
       "size": 10, 
       "soil":{
@@ -151,7 +141,6 @@
       "locations": []
     },
     {
-      "id":"11",
       "species": "Rowan", 
       "size": 15, 
       "soil":{
@@ -166,7 +155,6 @@
       "locations": []
     },
     {
-      "id":"12",
       "species": "Aspen", 
       "size": 25, 
       "soil":{
@@ -181,7 +169,6 @@
       "locations": []
     },
     {
-      "id":"13",
       "species": "Wych Elm", 
       "size": 30, 
       "soil":{
@@ -196,7 +183,6 @@
       "locations": []
     },
     {
-      "id":"14",
       "species": "Hawthorn", 
       "size": 15, 
       "soil":{
@@ -211,7 +197,6 @@
       "locations": []
     },
     {
-      "id":"15",
       "species": "Holly", 
       "size": 15, 
       "soil":{
@@ -226,7 +211,6 @@
       "locations": []
     },
     {
-      "id":"16",
       "species": "Elder", 
       "size": 15, 
       "soil":{
@@ -241,7 +225,6 @@
       "locations": []
     },
     {
-      "id":"17",
       "species": "Wild Cherry", 
       "size": 30, 
       "soil":{
@@ -256,7 +239,6 @@
       "locations": []
     },
     {
-      "id":"18",
       "species": "Bird Cherry", 
       "size": 25, 
       "soil":{
@@ -271,7 +253,6 @@
       "locations": []
     },
     {
-      "id":"19",
       "species": "Crab Apple Tree", 
       "size": 10, 
       "soil":{
@@ -286,7 +267,6 @@
       "locations": []
     },
     {
-      "id":"20",
       "species": "Dog Rose", 
       "size": 3, 
       "soil":{
@@ -301,7 +281,6 @@
       "locations": []
     },
     {
-      "id":"21",
       "species": "Arran Whitebeam", 
       "size": 7, 
       "soil":{
