@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Faq from "react-faq-component";
+import { motion } from "framer-motion";
 
 const LearnMap = () => {
 
@@ -60,20 +61,20 @@ const LearnMap = () => {
         <div>
             <div className='flex justify-evenly p-8'>
                 <div className="flex flex-col justify-center gap-48">
-                    <h3 className="text-5xl">Learn more about Scotland's soils</h3>
-                    <div className="faq-style-wrapper">
+                    <motion.h3 className="text-5xl" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>Learn more about Scotland's soils</motion.h3>
+                    <motion.div className="faq-style-wrapper" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}>
                     <Faq
             data={data}
             styles={styles}
             config={config}
             />
-            </div>
+            </motion.div>
                 </div>
-                    <img
-                        className="w-6/12 md:w-4/12 mb-4 md:mb-12"
+                    <motion.img
+                        className="w-6/12 md:w-4/12 mb-4 md:mb-12" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}
                         src="./images/Scotland_region_map.svg"
                         alt="interactive scotland map"
-                    ></img>
+                    ></motion.img>
                 </div>
         </div>
      );
