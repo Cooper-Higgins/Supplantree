@@ -62,7 +62,7 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers }) => {
         className="text-4xl md:text-6xl p-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
+        transition={{ delay: 0.5 }}
       >
         Find Your Tree
       </motion.h1>
@@ -70,7 +70,7 @@ const TreeForm = ({ postTree, putUser, data, users, setUsers, getUsers }) => {
         className="flex flex-col gap-4 place-self-center w-1/2 mt-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
+        transition={{ delay: 1, duration: 1 }}
         onSubmit={handleSubmit}
       >
         <select
