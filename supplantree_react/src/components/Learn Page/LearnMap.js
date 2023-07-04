@@ -49,6 +49,11 @@ const LearnMap = () => {
         rowTitleColor: "black",
         rowContentColor: 'black',
         arrowColor: "black",
+        rowContentPaddingBottom: "10px",
+        rowContentPaddingTop: "10px",
+        rowContentPaddingLeft: "10px",
+        rowContentPaddingRight: "10px",
+
     };
     
     const config = {
