@@ -4,6 +4,11 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const MyTrees = ({ users, handleDelete }) => {
+  
+  if (!users || !users[0] || !users[0].trees) {
+    return <div>Loading...</div>;
+  }
+
   const usersTrees = users[0]["trees"].map((tree, index) => {
     const onDelete = () => {
       handleDelete(tree.id);
@@ -20,6 +25,7 @@ const MyTrees = ({ users, handleDelete }) => {
         className="bg-pink-200 border-4 border-white basis-1/4 text-center rounded-xl shadow-xl shadow-gray-600 p-4 gap-6"
       >
         <p>{tree.species}</p>
+        {console.log(users[0]["trees"])}
         <img
           className="w-10/12 place-self-center md:w-8/12 m-2 p-1 rounded-3xl"
           src={tree.image}
