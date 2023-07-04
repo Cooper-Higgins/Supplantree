@@ -33,7 +33,7 @@ const CarouselCard = ({
               src={tree.image}
               alt="placeholder"
             ></img>
-            <div className="flex justify-evenly">
+            <div className="flex flex-col md:flex-row justify-evenly">
               <p className="place-self-center">Maximum Height: {tree.size}m</p>
               <p className="place-self-center">Maximum Age: {tree.age} Years</p>
             </div>

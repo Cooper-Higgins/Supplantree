@@ -7,7 +7,7 @@ const About = () => {
       <div className="flex flex-col m-4 rounded-3xl">
         <div className="flex justify-center">
           <motion.h1
-            className="text-4xl md:text-6xl p-6 md:p-10"
+            className="text-4xl md:text-6xl p-1 md:p-3"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
