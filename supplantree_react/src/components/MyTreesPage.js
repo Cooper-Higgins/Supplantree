@@ -16,7 +16,7 @@ const MyTrees = ({ users, handleDelete }) => {
   const usersTrees = users[0]["trees"].map((tree, index) => {
     const onDelete = () => {
       play()
-      setTimeout(handleDelete(tree.id),10000);
+      setTimeout(() => handleDelete(tree.id),5000);
     };
 
     const item = {
