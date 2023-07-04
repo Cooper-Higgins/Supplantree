@@ -24,15 +24,17 @@ const MyTrees = ({ users, handleDelete }) => {
         variants={item}
         className="bg-pink-200 border-4 border-white basis-1/4 text-center rounded-xl shadow-xl shadow-gray-600 p-4 gap-6"
       >
+        <div className="flex flex-col justify-center">
         <p>{tree.species}</p>
         {console.log(users[0]["trees"])}
         <img
-          className="w-10/12 place-self-center md:w-8/12 m-2 p-1 rounded-3xl"
+          className="w-10/12 md:w-8/12 place-self-center m-2 p-1 rounded-3xl"
           src={tree.image}
           alt="placeholder"
         ></img>
         <br />
-        <button onClick={onDelete}>Delete {tree.species}</button>
+        <button className="bg-slate-300 place-self-center border-white border-4 hover:bg-pink-200 transition duration-150 ease-out hover:ease-in hover:scale-110 active:scale-90 m-4 p-3 w-36 rounded-lg shadow-lg shadow-gray-600" onClick={onDelete}>Delete</button>
+        </div>
       </motion.div>
     );
   });

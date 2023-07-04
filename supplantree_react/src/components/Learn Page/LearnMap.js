@@ -76,7 +76,7 @@ const LearnMap = () => {
             <div className='flex justify-evenly p-8'>
                 <div className="flex flex-col justify-center gap-48">
                     <h3 className="text-5xl">Learn more about Scotland's soils</h3>
-                    <div className="red-bg-400">
+                    <div className="faq-style-wrapper">
                     <Faq
             data={data}
             styles={styles}
