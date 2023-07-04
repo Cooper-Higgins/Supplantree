@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const LandingPage = () => {
   return (
-    <main className="min-h-screen bg-green-400">
+    <main className="min-h-screen bg-gradient-to-tr from-green-300 to-green-500">
       <div className="flex justify-evenly gap-8 md:gap-4 flex-col-reverse md:flex-row pt-8">
         <div className="flex flex-col gap-8 md:gap-12 justify-center text-center md:w-5/12">
           <motion.h1
