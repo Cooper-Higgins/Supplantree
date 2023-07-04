@@ -36,7 +36,7 @@ public class TreeserviceApplicationTests {
 		soil.put("clay", Boolean.FALSE);
 		ArrayList<String> animals = new ArrayList<String>();
 		animals.add("chipmunk");
-		Tree tree1 = new Tree("pine",10,soil,"nature");
+		Tree tree1 = new Tree("pine",10,soil,"nature", "dhkfheif");
 		treeRepository.save(tree1);
 		Location location1 = new Location("Highlands", "peaty", "temperate");
 		locationRepository.save(location1);
@@ -56,7 +56,7 @@ public class TreeserviceApplicationTests {
 		soil.put("clay", Boolean.FALSE);
 		ArrayList<String> animals = new ArrayList<String>();
 		animals.add("chipmunk");
-		Tree tree1 = new Tree("pine",10,soil,"Nature stuff");
+		Tree tree1 = new Tree("pine",10,soil,"Nature stuff", "dhkfheif");
 		treeRepository.save(tree1);
 		user1.addTree(tree1);
 		userRepository.save(user1);
