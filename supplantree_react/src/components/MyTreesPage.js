@@ -2,8 +2,12 @@ import React from "react";
 import Request from "../helpers/request";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import sound from "../sounds/chainsaw-01-[AudioTrimmer.com].mp3";
+import useSound from "use-sound";
 
 const MyTrees = ({ users, handleDelete }) => {
+
+  const [play] = useSound(sound);
   
   if (!users || !users[0] || !users[0].trees) {
     return <div>Loading...</div>;
@@ -11,7 +15,8 @@ const MyTrees = ({ users, handleDelete }) => {
 
   const usersTrees = users[0]["trees"].map((tree, index) => {
     const onDelete = () => {
-      handleDelete(tree.id);
+      play()
+      setTimeout(() => handleDelete(tree.id),5000);
     };
 
     const item = {
