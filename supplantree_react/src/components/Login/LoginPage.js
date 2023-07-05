@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Login = () => {
   return (
-    <div className="bg-green-400 min-h-screen">
+    <div className="min-h-screen bg-gradient-to-tr from-green-300 to-green-500">
       <motion.h1
         className="text-4xl md:text-6xl p-4"
         initial={{ opacity: 0 }}
