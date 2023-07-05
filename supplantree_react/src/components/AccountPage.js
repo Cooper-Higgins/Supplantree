@@ -1,7 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Account = () => {
+const Account = ({users}) => {
+
+  if (!users || !users[0] || !users[0].trees) {
+    return <div>Loading...</div>;
+  }
+
+  const usersTreesArray = users[0]["trees"].length
+  
+
   return (
     <div className="min-h-screen bg-gradient-to-tr from-green-300 to-green-500">
       <div>
@@ -39,7 +47,7 @@ const Account = () => {
             <div className="flex flex-col gap-8">
               <h1 className="text-3xl">Your Statistics</h1>
               <ul className="flex flex-col gap-4 text-lg">
-                <li>You've planted ten trees in total</li>
+                <li>You've planted {usersTreesArray} trees in total</li>
                 <li>
                   Your trees are drawn from three species: Scots Pine, Alder,
                   and Grey Willow
