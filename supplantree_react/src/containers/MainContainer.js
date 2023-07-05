@@ -100,7 +100,7 @@ import LocationContainer from "./LocationContainer";
                 <Route path="/learn" element={<LearnContainer/>}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/my-trees" element={<MyTrees users={users} handleDelete={handleDelete}/>}/>
-                <Route path="/account" element={<Account/>}/>
+                <Route path="/account" element={<Account users={users}/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/create-account" element={<CreateAccount/>}/>
                 <Route path="/users/*" element={<UserContainer data = {data}/>}/>
