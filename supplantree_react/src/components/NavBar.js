@@ -1,15 +1,28 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { PiTreeEvergreenBold } from "react-icons/pi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import "./NavBar.css"
+import LoginButton from "../LoginButton";
+import { useAuth0 } from "@auth0/auth0-react"
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const { isAuthenticated } = useAuth0();
+  const navigate = useNavigate();
+
+  const handleLinkClickLog = (path) => {
+    if (!isAuthenticated) {
+      navigate("/login"); // Redirect to login page
+    } else {
+      navigate(path); // Go to the specified path
+    }
+  };
 
   return (
     <div>
@@ -67,7 +80,9 @@ const NavBar = () => {
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")
                   }
-                  onClick={closeMobileMenu}
+                  onClick={() => {
+                    handleLinkClickLog("/my-trees")
+                    closeMobileMenu()}}
                 >
                   Trees
                 </NavLink>
@@ -84,15 +99,14 @@ const NavBar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink
+                <LoginButton
                   to="/login"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")
                   }
-                  onClick={closeMobileMenu}
                 >
                   Login
-                </NavLink>
+                </LoginButton>
               </li>
             </ul>
           </div>
