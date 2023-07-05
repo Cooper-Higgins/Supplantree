@@ -96,7 +96,7 @@ const About = () => {
         >
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-full"
-            src="./images/second_image.jpg"
+            src="./images/jamie.jpg"
             alt="placeholder"
           ></img>
           <div className="flex flex-col justify-center gap-5 md:gap-10 m-8 text-green-950">
