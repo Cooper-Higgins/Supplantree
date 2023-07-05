@@ -23,6 +23,11 @@ const Account = () => {
           transition={{ delay: 1.5, duration: 0.5 }}
         >
           <h1 className="text-center text-4xl">Scott Hynd</h1>
+          <img
+            className="mt-12 rounded-full"
+            src="./images/scott.png"
+            alt="placeholder"
+          ></img>
         </motion.div>
         <div className="flex flex-col basis-2/3 gap-8">
           <motion.div
