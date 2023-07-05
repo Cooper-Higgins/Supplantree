@@ -68,7 +68,7 @@ const PlantContainer = ({ users, setUsers, getUsers, trees, setTrees }) => {
   };
 
   return (
-    <div className="bg-green-400 min-h-screen">
+    <div className="bg-gradient-to-tr from-green-300 to-green-500 min-h-screen">
       <TreeForm
         data={data}
         users={users}

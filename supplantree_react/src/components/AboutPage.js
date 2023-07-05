@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <main className="bg-green-400 flex flex-col md:flex-row">
+    <main className="bg-gradient-to-tr from-green-300 to-green-500 flex flex-col md:flex-row">
       <div className="flex flex-col m-4 rounded-3xl">
         <div className="flex justify-center">
           <motion.h1
@@ -29,7 +29,7 @@ const About = () => {
           className="flex flex-col md:flex-row bg-pink-200 border-8 border-white rounded-3xl shadow-lg shadow-gray-600"
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
-          transition={{ delay: 1.5, duration: 0.4 }}
+          transition={{ delay: 1.5, duration: 0.5 }}
         >
           <img
             className="w-10/12 place-self-center md:w-5/12 m-2 p-4 rounded-full"
@@ -96,7 +96,7 @@ const About = () => {
         >
           <img
             className="w-10/12 md:w-5/12 place-self-center m-2 p-4 rounded-full"
-            src="./images/second_image.jpg"
+            src="./images/jamie.jpg"
             alt="placeholder"
           ></img>
           <div className="flex flex-col justify-center gap-5 md:gap-10 m-8 text-green-950">
